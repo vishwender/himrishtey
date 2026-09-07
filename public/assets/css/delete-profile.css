@@ -1,0 +1,148 @@
+.delete-profile-page{
+    max-width:900px;
+    margin:40px auto;
+    padding:0 20px;
+}
+
+.delete-wrapper{
+    background:#fff;
+    border-radius:20px;
+    padding:50px;
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+}
+
+.delete-header h1{
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:20px;
+    color:#222;
+}
+
+.delete-header p{
+    font-size:22px;
+    line-height:1.8;
+    color:#666;
+    margin-bottom:45px;
+}
+
+.reason-list{
+    display:flex;
+    flex-direction:column;
+    gap:28px;
+}
+
+.reason-item{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    cursor:pointer;
+    font-size:24px;
+    font-weight:500;
+    color:#333;
+}
+
+.reason-item input{
+    display:none;
+}
+
+.custom-radio{
+    width:28px;
+    height:28px;
+    border:3px solid #bfbfbf;
+    border-radius:50%;
+    position:relative;
+    transition:.3s;
+    flex-shrink:0;
+}
+
+.reason-item input:checked + .custom-radio{
+    border-color:#e91e63;
+}
+
+.reason-item input:checked + .custom-radio::after{
+    content:'';
+    position:absolute;
+    width:14px;
+    height:14px;
+    background:#e91e63;
+    border-radius:50%;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+}
+
+.other-reason{
+    margin-top:35px;
+}
+
+.other-reason textarea{
+    width:100%;
+    border:1px solid #ddd;
+    border-radius:12px;
+    padding:15px;
+    resize:none;
+    font-size:18px;
+    outline:none;
+}
+
+.delete-btn{
+    margin-top:50px;
+    width:100%;
+    height:65px;
+    border:none;
+    border-radius:14px;
+    background:#e91e63;
+    color:#fff;
+    font-size:22px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.delete-btn:hover{
+    background:#cf0d52;
+}
+
+.ep-toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #333;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    z-index: 9999;
+}
+
+.ep-toast.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media(max-width:768px){
+
+    .delete-wrapper{
+        padding:25px;
+    }
+
+    .delete-header h1{
+        font-size:34px;
+    }
+
+    .delete-header p{
+        font-size:18px;
+    }
+
+    .reason-item{
+        font-size:19px;
+    }
+
+    .delete-btn{
+        height:55px;
+        font-size:18px;
+    }
+
+}

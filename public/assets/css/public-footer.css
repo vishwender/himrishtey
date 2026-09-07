@@ -1,0 +1,72 @@
+.public-footer {
+    background: linear-gradient(
+        135deg,
+        color-mix(in srgb, var(--brand) 90%, #000) 0%,
+        var(--deep) 100%
+    ) !important;;
+
+    color: #fff;
+
+    border-top: 1px solid
+        color-mix(in srgb, var(--gold) 35%, transparent);
+
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.public-footer .public-footer-grid {
+    gap: 56px;
+}
+
+.public-footer .public-footer-grid > div {
+    gap: 10px;
+}
+
+.public-footer .public-footer-grid > div > b {
+    font-size: 14px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.public-footer .public-footer-grid a {
+    font-size: 13px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.public-footer .public-footer-grid a:hover {
+    color: #fff;
+}
+
+.public-footer p,
+.public-footer small {
+    color: rgba(255, 255, 255, 0.76);
+}
+
+.public-footer .footer-logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0;
+}
+
+.public-footer .footer-logo img {
+    filter: brightness(0) invert(1);
+    max-width: 180px;
+    height: auto;
+}
+
+.public-footer > small {
+    display: block;
+    margin-top: 30px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .public-footer .public-footer-grid a {
+        font-size: 13.5px;
+        line-height: 1.7;
+    }
+}

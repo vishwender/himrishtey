@@ -1,0 +1,248 @@
+[
+  {
+    "original": "resources/js/public/search-home-member.js",
+    "archived": "storage/app/project-archive/2026-09-05/resources/js/public/search-home-member.js",
+    "reason": "Unimported resource copy; identical served copy remains in public/assets/js.",
+    "sha256": "57d66b28a8e3fb73459aef607d1e6c6724bb4cc743b67aba056394f79eeccaa5"
+  },
+  {
+    "original": "resources/js/public/delete-profile.js",
+    "archived": "storage/app/project-archive/2026-09-05/resources/js/public/delete-profile.js",
+    "reason": "Unimported resource copy; identical served copy remains in public/assets/js.",
+    "sha256": "9262d0a790259147c7a63eca5618ccc846eb76c24c2a1ca289eb1a48f4f8ccc0"
+  },
+  {
+    "original": "resources/js/public/profile-detail.js",
+    "archived": "storage/app/project-archive/2026-09-05/resources/js/public/profile-detail.js",
+    "reason": "Unimported resource copy; identical served copy remains in public/assets/js.",
+    "sha256": "29cdbc0b0a96d0fb98dcdc4762ec800259fd473382c0b3e2e7b97c300d470712"
+  },
+  {
+    "original": "resources/js/public/edit-profile.js",
+    "archived": "storage/app/project-archive/2026-09-05/resources/js/public/edit-profile.js",
+    "reason": "Unimported resource copy; identical served copy remains in public/assets/js.",
+    "sha256": "c91f89a70b958e146ee13c2ee23e537b52944c07bd2cc4372dc71abcdaefab95"
+  },
+  {
+    "original": "resources/js/public/search-by-id.js",
+    "archived": "storage/app/project-archive/2026-09-05/resources/js/public/search-by-id.js",
+    "reason": "Unimported resource copy; identical served copy remains in public/assets/js.",
+    "sha256": "977e201dc8c78916eb7c8ed1588eeff4b7aad0abacdecfd395922b7043158c77"
+  },
+  {
+    "original": "resources/js/public/login-old-delete.js",
+    "archived": "storage/app/project-archive/2026-09-05/resources/js/public/login-old-delete.js",
+    "reason": "Unimported obsolete script; its identical public copy is also archived.",
+    "sha256": "8b62ae9764cfe34261769886b01aeb55290a0f847c361cb35d2fb63faee969e6"
+  },
+  {
+    "original": "resources/js/public/profile-photo.js",
+    "archived": "storage/app/project-archive/2026-09-05/resources/js/public/profile-photo.js",
+    "reason": "Unimported resource copy; identical served copy remains in public/assets/js.",
+    "sha256": "911c7f248b26e94362aa29f70eb7638aed293fefcb6fa822f253591ec7793697"
+  },
+  {
+    "original": "resources/js/public/quick-search.js",
+    "archived": "storage/app/project-archive/2026-09-05/resources/js/public/quick-search.js",
+    "reason": "Unimported resource copy; identical served copy remains in public/assets/js.",
+    "sha256": "d70d861f85e77391945c8f364792ca44f620b37c63bcbb6c8d05edbe07b08408"
+  },
+  {
+    "original": "resources/js/public/interests.js",
+    "archived": "storage/app/project-archive/2026-09-05/resources/js/public/interests.js",
+    "reason": "Unimported resource copy; identical served copy remains in public/assets/js.",
+    "sha256": "0ef2cac8ca5d50b424e02d00f5dac7b73cdcbf92ccb5db951b2b03b2b54d758b"
+  },
+  {
+    "original": "resources/js/public/verify-account.js",
+    "archived": "storage/app/project-archive/2026-09-05/resources/js/public/verify-account.js",
+    "reason": "Unimported resource copy; identical served copy remains in public/assets/js.",
+    "sha256": "ea6502777a4bebbd1ad91728878d411dfbc591cde90cf808fddb1ef46e1138c8"
+  },
+  {
+    "original": "resources/js/public/edit-profile-old-delete.js",
+    "archived": "storage/app/project-archive/2026-09-05/resources/js/public/edit-profile-old-delete.js",
+    "reason": "Unimported obsolete script; its identical public copy is also archived.",
+    "sha256": "ba955f7ba8aca5c1f438821f5d14a1128d2def77fbada5d9f905c6b0237f237f"
+  },
+  {
+    "original": "resources/js/public/wallet.js",
+    "archived": "storage/app/project-archive/2026-09-05/resources/js/public/wallet.js",
+    "reason": "Unimported resource copy; identical served copy remains in public/assets/js.",
+    "sha256": "9b627be4de039aad032d29e5a8a13e79102bcfd0a8b34c70296c68cae34e9daf"
+  },
+  {
+    "original": "resources/js/public/change-password.js",
+    "archived": "storage/app/project-archive/2026-09-05/resources/js/public/change-password.js",
+    "reason": "Unimported resource copy; identical served copy remains in public/assets/js.",
+    "sha256": "4897cf0586ce5c2c067ae7d25d4a41b9cb5b7925705f8a5ebf542ca1b7c7d751"
+  },
+  {
+    "original": "resources/js/public/memberships.js",
+    "archived": "storage/app/project-archive/2026-09-05/resources/js/public/memberships.js",
+    "reason": "Unimported resource copy; identical served copy remains in public/assets/js.",
+    "sha256": "ac756748a3efe9c19ee65d86a512878b2e85519133d2f9f4a889ab1d58acb8da"
+  },
+  {
+    "original": "resources/js/public/search-results.js",
+    "archived": "storage/app/project-archive/2026-09-05/resources/js/public/search-results.js",
+    "reason": "Unimported resource copy; identical served copy remains in public/assets/js.",
+    "sha256": "754ea0a168e29995a1324d94827216711fa40cb4bf18d1a62a69924174e0acd8"
+  },
+  {
+    "original": "resources/js/public/success-stories.js",
+    "archived": "storage/app/project-archive/2026-09-05/resources/js/public/success-stories.js",
+    "reason": "Unimported resource copy; identical served copy remains in public/assets/js.",
+    "sha256": "5058a489c4d7fb9765d6f97deced0333b240a158fda321e9505e3a8c28f350a2"
+  },
+  {
+    "original": "resources/js/public/advanced-search.js",
+    "archived": "storage/app/project-archive/2026-09-05/resources/js/public/advanced-search.js",
+    "reason": "Unimported resource copy; identical served copy remains in public/assets/js.",
+    "sha256": "ebdd1d1fd9a8ff3b25095499bf2f3c85346897ce3db26ddbb6ce06fc594b2d3f"
+  },
+  {
+    "original": "resources/views/master-backup/layout.blade.php",
+    "archived": "storage/app/project-archive/2026-09-05/resources/views/master-backup/layout.blade.php",
+    "reason": "Unreferenced backup/obsolete file; retained here for recovery.",
+    "sha256": "88352ea7d466c5742ba0fb2faefedb7a0fcdc7e376d5215a71dfaf09465d56ff"
+  },
+  {
+    "original": "resources/views/master-backup/dashboard-layout.blade.php",
+    "archived": "storage/app/project-archive/2026-09-05/resources/views/master-backup/dashboard-layout.blade.php",
+    "reason": "Unreferenced backup/obsolete file; retained here for recovery.",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original": "resources/views/layouts/profile.blade.php",
+    "archived": "storage/app/project-archive/2026-09-05/resources/views/layouts/profile.blade.php",
+    "reason": "Unreferenced backup/obsolete file; retained here for recovery.",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original": "resources/views/dashboard/view-my-profile.blade.php",
+    "archived": "storage/app/project-archive/2026-09-05/resources/views/dashboard/view-my-profile.blade.php",
+    "reason": "Unreferenced backup/obsolete file; retained here for recovery.",
+    "sha256": "ea47f18aed1689701f4b4786d061f21591b896552c2fef3536039bd9228f4998"
+  },
+  {
+    "original": "resources/views/dashboard/home/partials/profile-card.blade.php",
+    "archived": "storage/app/project-archive/2026-09-05/resources/views/dashboard/home/partials/profile-card.blade.php",
+    "reason": "Unreferenced backup/obsolete file; retained here for recovery.",
+    "sha256": "d08ca647153b3be6ce3a0bd473a73d44e0b3cf4773296dc468c15688a846d0f1"
+  },
+  {
+    "original": "public/assets/js/login-old-delete.js",
+    "archived": "storage/app/project-archive/2026-09-05/public/assets/js/login-old-delete.js",
+    "reason": "Unreferenced backup/obsolete file; retained here for recovery.",
+    "sha256": "8b62ae9764cfe34261769886b01aeb55290a0f847c361cb35d2fb63faee969e6"
+  },
+  {
+    "original": "public/assets/js/edit-profile-old-delete.js",
+    "archived": "storage/app/project-archive/2026-09-05/public/assets/js/edit-profile-old-delete.js",
+    "reason": "Unreferenced backup/obsolete file; retained here for recovery.",
+    "sha256": "ba955f7ba8aca5c1f438821f5d14a1128d2def77fbada5d9f905c6b0237f237f"
+  },
+  {
+    "original": "public/assets/assets.zip",
+    "archived": "storage/app/project-archive/2026-09-05/public/assets/assets.zip",
+    "reason": "Unreferenced backup/obsolete file; retained here for recovery.",
+    "sha256": "91e4af7f381f25e07e6a7f968eb20000a39f3f100b6d1b6b3561c07526b524d8"
+  },
+  {
+    "original": ".DS_Store",
+    "archived": "storage/app/project-archive/2026-09-05/.DS_Store",
+    "reason": "macOS Finder metadata; not application source.",
+    "sha256": "1be1bb96f09bdadd228a2bf7ab4442065f9d1cb7f098daccda38d3dc10242bba"
+  },
+  {
+    "original": "resources/.DS_Store",
+    "archived": "storage/app/project-archive/2026-09-05/resources/.DS_Store",
+    "reason": "macOS Finder metadata; not application source.",
+    "sha256": "0ebbe291800d10bbd0e6d716a6f1ae5eec7497389e350a479c3aed72327fe704"
+  },
+  {
+    "original": "resources/images/.DS_Store",
+    "archived": "storage/app/project-archive/2026-09-05/resources/images/.DS_Store",
+    "reason": "macOS Finder metadata; not application source.",
+    "sha256": "3a73a2fd95dc9e525c3ec12a482033893749326b14314c908316d11803f6a8df"
+  },
+  {
+    "original": "resources/views/.DS_Store",
+    "archived": "storage/app/project-archive/2026-09-05/resources/views/.DS_Store",
+    "reason": "macOS Finder metadata; not application source.",
+    "sha256": "ad904fd72ba30f1b0c60cad457d60de03adae78c5021e2c397900f124d855441"
+  },
+  {
+    "original": "resources/views/dashboard/.DS_Store",
+    "archived": "storage/app/project-archive/2026-09-05/resources/views/dashboard/.DS_Store",
+    "reason": "macOS Finder metadata; not application source.",
+    "sha256": "45a230ec5bd39927107dd741aee0ea668989688f50c306951f622fa91d84ca1e"
+  },
+  {
+    "original": "resources/views/dashboard/home/.DS_Store",
+    "archived": "storage/app/project-archive/2026-09-05/resources/views/dashboard/home/.DS_Store",
+    "reason": "macOS Finder metadata; not application source.",
+    "sha256": "a493f8c257d26d65afbccf0086b2b5cc0236277ac4748d4f7dc15f58124f3b2f"
+  },
+  {
+    "original": "public/.DS_Store",
+    "archived": "storage/app/project-archive/2026-09-05/public/.DS_Store",
+    "reason": "macOS Finder metadata; not application source.",
+    "sha256": "548e7f9ac5ecac4286f626d9988bbf76f6cc8180a92ad7058ef02a37c37b15aa"
+  },
+  {
+    "original": "public/assets/.DS_Store",
+    "archived": "storage/app/project-archive/2026-09-05/public/assets/.DS_Store",
+    "reason": "macOS Finder metadata; not application source.",
+    "sha256": "150ed496c4c63987a86b0c56141ff46900a9d2dda23217d681c3caa33c9eb654"
+  },
+  {
+    "original": "public/assets/images/.DS_Store",
+    "archived": "storage/app/project-archive/2026-09-05/public/assets/images/.DS_Store",
+    "reason": "macOS Finder metadata; not application source.",
+    "sha256": "a346df013c014c8f63f9b31b0a314da73a4eb4d8f9ca33bd4ce8a390dd6ede88"
+  },
+  {
+    "original": "resources/views/welcome.blade.php",
+    "archived": "storage/app/project-archive/2026-09-05/resources/views/welcome.blade.php",
+    "reason": "Unused former landing page; the welcome route renders pages.home.",
+    "sha256": "8b580f89995d418d0b0ccacb477fffa1cf93251c62a9691f27a91c48355883f3"
+  },
+  {
+    "original": "resources/css/app.css",
+    "archived": "storage/app/project-archive/2026-09-05/resources/css/app.css",
+    "reason": "Empty stylesheet, absent from the Vite entry points and CSS imports.",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original": "resources/css/home/sections.css",
+    "archived": "storage/app/project-archive/2026-09-05/resources/css/home/sections.css",
+    "reason": "Empty stylesheet, absent from the Vite entry points and CSS imports.",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original": "resources/css/themes/gallpakki.css",
+    "archived": "storage/app/project-archive/2026-09-05/resources/css/themes/gallpakki.css",
+    "reason": "Empty stylesheet, absent from the Vite entry points and CSS imports.",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original": "resources/css/themes/dogririshtey.css",
+    "archived": "storage/app/project-archive/2026-09-05/resources/css/themes/dogririshtey.css",
+    "reason": "Empty stylesheet, absent from the Vite entry points and CSS imports.",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original": "resources/css/themes/devbhoomi.css",
+    "archived": "storage/app/project-archive/2026-09-05/resources/css/themes/devbhoomi.css",
+    "reason": "Empty stylesheet, absent from the Vite entry points and CSS imports.",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "original": "resources/css/themes/himrishtey.css",
+    "archived": "storage/app/project-archive/2026-09-05/resources/css/themes/himrishtey.css",
+    "reason": "Empty stylesheet, absent from the Vite entry points and CSS imports.",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

@@ -1,0 +1,408 @@
+path	classification	bytes	notes
+.ddev/.dbimageBuild/Dockerfile	development environment	765	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/.ddev-docker-compose-base.yaml	development environment	7431	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/.ddev-docker-compose-full.yaml	development environment	9464	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/.gitignore	development environment	804	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/.homeadditions/README.txt	development environment	275	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/.homeadditions/bash_aliases.example	development environment	166	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/.webimageBuild/Dockerfile	development environment	1440	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/addon-metadata/phpmyadmin/manifest.yaml	development environment	274	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/apache/README.apache.txt	development environment	796	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/apache/apache-site.conf	development environment	3733	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/apache/seconddocroot.conf.example	development environment	3236	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/commands/.gitattributes	development environment	186	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/commands/db/README.txt	development environment	282	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/commands/host/README.txt	development environment	311	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/commands/host/phpmyadmin	development environment	791	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/commands/web/README.txt	development environment	252	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/config.yaml	development environment	11907	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/db-build/Dockerfile.example	development environment	256	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/db-build/README.txt	development environment	1071	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/docker-compose.phpmyadmin.yaml	development environment	689	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/docker-compose.phpmyadmin_norouter.yaml	development environment	170	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/homeadditions/README.txt	development environment	275	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/homeadditions/bash_aliases.example	development environment	166	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/mutagen/.start-synced	development environment	15	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/mutagen/mutagen.yml	development environment	1214	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/mysql/README.txt	development environment	397	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/mysql/character-set.cnf.example	development environment	94	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/mysql/max-packet.cnf.example	development environment	176	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/nginx_full/README.nginx_full.txt	development environment	700	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/nginx_full/nginx-site.conf	development environment	2839	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/nginx_full/seconddocroot.conf.example	development environment	3080	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/php/README.txt	development environment	402	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/php/php-example.ini.example	development environment	48	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/providers/README.txt	development environment	6347	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/providers/acquia.yaml	development environment	4194	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/providers/git.yaml.example	development environment	1375	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/providers/lagoon.yaml	development environment	3574	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/providers/localfile.yaml.example	development environment	1162	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/providers/pantheon.yaml	development environment	9517	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/providers/platform.yaml	development environment	10230	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/providers/rsync.yaml.example	development environment	2352	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/providers/upsun.yaml	development environment	10418	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/share-providers/README.txt	development environment	5531	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/share-providers/cloudflared.sh	development environment	3967	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/share-providers/localtunnel.sh.example	development environment	2025	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/share-providers/ngrok.sh	development environment	1505	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/traefik/config/himrishtey.yaml	development environment	4506	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/web-build/Dockerfile.example	development environment	257	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/web-build/README.txt	development environment	1082	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/web-entrypoint.d/README.txt	development environment	356	DDEV configuration, examples, add-on files, or generated runtime metadata
+.ddev/xhprof/xhprof_prepend.php	development environment	2053	DDEV configuration, examples, add-on files, or generated runtime metadata
+.editorconfig	application or project source	258	Retained; reviewed within source/configuration/reference audit
+.env	local environment	7034	Required local configuration; contents excluded from audit report
+.env.example	application or project source	3151	Retained; reviewed within source/configuration/reference audit
+.env.production.example	application or project source	2636	Retained; reviewed within source/configuration/reference audit
+.gitattributes	application or project source	179	Retained; reviewed within source/configuration/reference audit
+.gitignore	application or project source	328	Retained; reviewed within source/configuration/reference audit
+.htaccess	application or project source	1628	Retained; reviewed within source/configuration/reference audit
+.phpunit.cache/*	dependency or runtime group	3174	1 files classified as a group; not individually marked for deletion
+README.md	application or project source	6259	Retained; reviewed within source/configuration/reference audit
+app/Auth/MemberTokenUserProvider.php	application or project source	1472	Retained; reviewed within source/configuration/reference audit
+app/Console/Kernel.php	application or project source	681	Retained; reviewed within source/configuration/reference audit
+app/Exceptions/Handler.php	application or project source	1050	Retained; reviewed within source/configuration/reference audit
+app/Http/Controllers/Auth/ConfirmPasswordController.php	retained removal candidate	965	Unused controller paths (no registered routes)
+app/Http/Controllers/Auth/ForgotPasswordController.php	application or project source	7803	Retained; reviewed within source/configuration/reference audit
+app/Http/Controllers/Auth/LoginController.php	application or project source	5963	Retained; reviewed within source/configuration/reference audit
+app/Http/Controllers/Auth/RegisterController.php	retained removal candidate	1905	Unused controller paths (no registered routes)
+app/Http/Controllers/Auth/VerificationController.php	retained removal candidate	1071	Unused controller paths (no registered routes)
+app/Http/Controllers/BlogController.php	application or project source	850	Retained; reviewed within source/configuration/reference audit
+app/Http/Controllers/Controller.php	application or project source	299	Retained; reviewed within source/configuration/reference audit
+app/Http/Controllers/HomeController.php	application or project source	93794	Retained; reviewed within source/configuration/reference audit
+app/Http/Controllers/MemberAuth/ForgotPasswordController.php	retained removal candidate	560	Unused controller paths (no registered routes)
+app/Http/Controllers/MemberAuth/ResetPasswordController.php	retained removal candidate	1958	Unused controller paths (no registered routes)
+app/Http/Controllers/MemberController.php	application or project source	4785	Retained; reviewed within source/configuration/reference audit
+app/Http/Controllers/MembershipController.php	application or project source	10475	Retained; reviewed within source/configuration/reference audit
+app/Http/Controllers/MyMemberController.php	application or project source	25097	Retained; reviewed within source/configuration/reference audit
+app/Http/Controllers/OtpController.php	application or project source	11477	Retained; reviewed within source/configuration/reference audit
+app/Http/Controllers/PagesController.php	application or project source	587	Retained; reviewed within source/configuration/reference audit
+app/Http/Controllers/ProfileController.php	application or project source	19316	Retained; reviewed within source/configuration/reference audit
+app/Http/Controllers/PushSubscriptionController.php	application or project source	3813	Retained; reviewed within source/configuration/reference audit
+app/Http/Controllers/SmsController.php	retained removal candidate	1007	Unused controller paths (no registered routes)
+app/Http/Controllers/WalletController.php	application or project source	5698	Retained; reviewed within source/configuration/reference audit
+app/Http/Controllers/WelcomeController.php	application or project source	3988	Retained; reviewed within source/configuration/reference audit
+app/Http/Kernel.php	application or project source	2649	Retained; reviewed within source/configuration/reference audit
+app/Http/Middleware/Authenticate.php	application or project source	800	Retained; reviewed within source/configuration/reference audit
+app/Http/Middleware/EncryptCookies.php	application or project source	307	Retained; reviewed within source/configuration/reference audit
+app/Http/Middleware/PreventRequestsDuringMaintenance.php	application or project source	366	Retained; reviewed within source/configuration/reference audit
+app/Http/Middleware/RedirectIfAuthenticated.php	application or project source	877	Retained; reviewed within source/configuration/reference audit
+app/Http/Middleware/ResolveSiteContext.php	application or project source	407	Retained; reviewed within source/configuration/reference audit
+app/Http/Middleware/TrimStrings.php	application or project source	381	Retained; reviewed within source/configuration/reference audit
+app/Http/Middleware/TrustHosts.php	application or project source	372	Retained; reviewed within source/configuration/reference audit
+app/Http/Middleware/TrustProxies.php	application or project source	649	Retained; reviewed within source/configuration/reference audit
+app/Http/Middleware/ValidateSignature.php	application or project source	460	Retained; reviewed within source/configuration/reference audit
+app/Http/Middleware/VerifyCsrfToken.php	application or project source	320	Retained; reviewed within source/configuration/reference audit
+app/Mail/InterestMail.php	retained removal candidate	464	Inactive mail and password-reset scaffolding
+app/Mail/RegisterEmail.php	application or project source	466	Retained; reviewed within source/configuration/reference audit
+app/Models/Agent.php	retained removal candidate	176	Unreferenced model classes
+app/Models/AgentProfile.php	retained removal candidate	183	Unreferenced model classes
+app/Models/AnnualIncome.php	application or project source	256	Retained; reviewed within source/configuration/reference audit
+app/Models/Cast.php	application or project source	208	Retained; reviewed within source/configuration/reference audit
+app/Models/Citie.php	retained removal candidate	209	Unreferenced model classes
+app/Models/City.php	application or project source	246	Retained; reviewed within source/configuration/reference audit
+app/Models/ContactMessage.php	application or project source	339	Retained; reviewed within source/configuration/reference audit
+app/Models/Countrie.php	application or project source	211	Retained; reviewed within source/configuration/reference audit
+app/Models/DeleteProfile.php	application or project source	371	Retained; reviewed within source/configuration/reference audit
+app/Models/Education.php	application or project source	249	Retained; reviewed within source/configuration/reference audit
+app/Models/EmployeeActivityLog.php	retained removal candidate	271	Unreferenced model classes
+app/Models/Employer.php	application or project source	251	Retained; reviewed within source/configuration/reference audit
+app/Models/FamilyStatus.php	application or project source	254	Retained; reviewed within source/configuration/reference audit
+app/Models/Height.php	application or project source	177	Retained; reviewed within source/configuration/reference audit
+app/Models/MaritalStatus.php	application or project source	257	Retained; reviewed within source/configuration/reference audit
+app/Models/Member.php	application or project source	5993	Retained; reviewed within source/configuration/reference audit
+app/Models/MemberLog.php	retained removal candidate	252	Unreferenced model classes
+app/Models/MemberPhotos.php	application or project source	381	Retained; reviewed within source/configuration/reference audit
+app/Models/MemberProfileRange.php	retained removal candidate	328	Unreferenced model classes
+app/Models/MemberWallet.php	application or project source	314	Retained; reviewed within source/configuration/reference audit
+app/Models/MembershipPlan.php	application or project source	822	Retained; reviewed within source/configuration/reference audit
+app/Models/MembershipType.php	application or project source	367	Retained; reviewed within source/configuration/reference audit
+app/Models/MotherTongue.php	application or project source	256	Retained; reviewed within source/configuration/reference audit
+app/Models/Occupation.php	application or project source	262	Retained; reviewed within source/configuration/reference audit
+app/Models/Offer.php	application or project source	208	Retained; reviewed within source/configuration/reference audit
+app/Models/Page.php	application or project source	207	Retained; reviewed within source/configuration/reference audit
+app/Models/Payment.php	application or project source	291	Retained; reviewed within source/configuration/reference audit
+app/Models/Post.php	application or project source	1048	Retained; reviewed within source/configuration/reference audit
+app/Models/ProfileCreatedFor.php	application or project source	234	Retained; reviewed within source/configuration/reference audit
+app/Models/ProfileLike.php	application or project source	252	Retained; reviewed within source/configuration/reference audit
+app/Models/ProfileRange.php	retained removal candidate	256	Unreferenced model classes
+app/Models/ProfileViewed.php	application or project source	256	Retained; reviewed within source/configuration/reference audit
+app/Models/Push.php	application or project source	252	Retained; reviewed within source/configuration/reference audit
+app/Models/Religion.php	application or project source	211	Retained; reviewed within source/configuration/reference audit
+app/Models/SentInterest.php	application or project source	255	Retained; reviewed within source/configuration/reference audit
+app/Models/Service.php	application or project source	210	Retained; reviewed within source/configuration/reference audit
+app/Models/Setting.php	application or project source	178	Retained; reviewed within source/configuration/reference audit
+app/Models/Shortlist.php	application or project source	365	Retained; reviewed within source/configuration/reference audit
+app/Models/StaffviewedContact.php	retained removal candidate	345	Unreferenced model classes
+app/Models/State.php	application or project source	176	Retained; reviewed within source/configuration/reference audit
+app/Models/SuccessStory.php	application or project source	390	Retained; reviewed within source/configuration/reference audit
+app/Models/User.php	application or project source	948	Retained; reviewed within source/configuration/reference audit
+app/Models/UserActivity.php	retained removal candidate	254	Unreferenced model classes
+app/Models/UserActivityLog.php	retained removal candidate	273	Unreferenced model classes
+app/Models/UserRating.php	retained removal candidate	261	Unreferenced model classes
+app/Models/ViewedContact.php	application or project source	257	Retained; reviewed within source/configuration/reference audit
+app/Models/WalletOffer.php	application or project source	254	Retained; reviewed within source/configuration/reference audit
+app/Providers/AppServiceProvider.php	application or project source	3733	Retained; reviewed within source/configuration/reference audit
+app/Providers/AuthServiceProvider.php	application or project source	625	Retained; reviewed within source/configuration/reference audit
+app/Providers/BroadcastServiceProvider.php	application or project source	380	Retained; reviewed within source/configuration/reference audit
+app/Providers/EventServiceProvider.php	application or project source	926	Retained; reviewed within source/configuration/reference audit
+app/Providers/RouteServiceProvider.php	application or project source	1327	Retained; reviewed within source/configuration/reference audit
+app/Services/EmailService.php	application or project source	2183	Retained; reviewed within source/configuration/reference audit
+app/Services/NimbusSmsService.php	application or project source	5249	Retained; reviewed within source/configuration/reference audit
+app/Services/ProfileUnlockPricing.php	application or project source	398	Retained; reviewed within source/configuration/reference audit
+app/Services/PushNotificationService.php	application or project source	3201	Retained; reviewed within source/configuration/reference audit
+app/Support/SiteContext.php	application or project source	3780	Retained; reviewed within source/configuration/reference audit
+artisan	application or project source	1686	Retained; reviewed within source/configuration/reference audit
+bootstrap/app.php	application or project source	1620	Retained; reviewed within source/configuration/reference audit
+bootstrap/cache/*	dependency or runtime group	23842	3 files classified as a group; not individually marked for deletion
+composer.json	application or project source	1978	Retained; reviewed within source/configuration/reference audit
+composer.lock	application or project source	350327	Retained; reviewed within source/configuration/reference audit
+config/app.php	application or project source	7782	Retained; reviewed within source/configuration/reference audit
+config/auth.php	application or project source	4142	Retained; reviewed within source/configuration/reference audit
+config/broadcasting.php	application or project source	2091	Retained; reviewed within source/configuration/reference audit
+config/cache.php	application or project source	3272	Retained; reviewed within source/configuration/reference audit
+config/cors.php	application or project source	846	Retained; reviewed within source/configuration/reference audit
+config/database.php	application or project source	8635	Retained; reviewed within source/configuration/reference audit
+config/filesystems.php	application or project source	2370	Retained; reviewed within source/configuration/reference audit
+config/hashing.php	application or project source	1572	Retained; reviewed within source/configuration/reference audit
+config/logging.php	application or project source	3749	Retained; reviewed within source/configuration/reference audit
+config/mail.php	application or project source	3600	Retained; reviewed within source/configuration/reference audit
+config/queue.php	application or project source	2906	Retained; reviewed within source/configuration/reference audit
+config/sanctum.php	application or project source	2294	Retained; reviewed within source/configuration/reference audit
+config/services.php	application or project source	1158	Retained; reviewed within source/configuration/reference audit
+config/session.php	application or project source	7023	Retained; reviewed within source/configuration/reference audit
+config/site.php	application or project source	12245	Retained; reviewed within source/configuration/reference audit
+config/view.php	application or project source	1053	Retained; reviewed within source/configuration/reference audit
+database/.gitignore	application or project source	10	Retained; reviewed within source/configuration/reference audit
+database/factories/UserFactory.php	application or project source	970	Retained; reviewed within source/configuration/reference audit
+database/migrations/2014_10_12_000000_create_users_table.php	application or project source	793	Retained; reviewed within source/configuration/reference audit
+database/migrations/2014_10_12_100000_create_password_resets_table.php	application or project source	669	Retained; reviewed within source/configuration/reference audit
+database/migrations/2019_08_19_000000_create_failed_jobs_table.php	application or project source	810	Retained; reviewed within source/configuration/reference audit
+database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php	application or project source	898	Retained; reviewed within source/configuration/reference audit
+database/migrations/2026_08_26_000000_add_remember_token_to_members_table.php	application or project source	665	Retained; reviewed within source/configuration/reference audit
+database/migrations/2026_09_03_000000_create_contact_messages_table.php	application or project source	896	Retained; reviewed within source/configuration/reference audit
+database/performance/indexes.sql	application or project source	935	Retained; reviewed within source/configuration/reference audit
+database/seeders/DatabaseSeeder.php	application or project source	492	Retained; reviewed within source/configuration/reference audit
+docs/archived-files.json	audit documentation	13197	Generated project audit and movement records
+docs/moved-files.json	audit documentation	1141	Generated project audit and movement records
+docs/project-audit.md	audit documentation	13147	Generated project audit and movement records
+lang/en/auth.php	application or project source	674	Retained; reviewed within source/configuration/reference audit
+lang/en/pagination.php	application or project source	534	Retained; reviewed within source/configuration/reference audit
+lang/en/passwords.php	application or project source	744	Retained; reviewed within source/configuration/reference audit
+lang/en/validation.php	application or project source	10118	Retained; reviewed within source/configuration/reference audit
+node_modules/*	dependency or runtime group	101910874	5452 files classified as a group; not individually marked for deletion
+package-lock.json	application or project source	54104	Retained; reviewed within source/configuration/reference audit
+package.json	application or project source	411	Retained; reviewed within source/configuration/reference audit
+phpunit.xml	application or project source	1044	Retained; reviewed within source/configuration/reference audit
+public/.htaccess	application or project source	603	Retained; reviewed within source/configuration/reference audit
+public/assets/css/about-theme.css	retained removal candidate	2997	Unreferenced directly served CSS
+public/assets/css/about-us.css	retained removal candidate	2008	Unreferenced directly served CSS
+public/assets/css/advanced-search.css	application or project source	16864	Retained; reviewed within source/configuration/reference audit
+public/assets/css/blog.css	application or project source	7283	Retained; reviewed within source/configuration/reference audit
+public/assets/css/change-password.css	application or project source	2005	Retained; reviewed within source/configuration/reference audit
+public/assets/css/contact.css	application or project source	6070	Retained; reviewed within source/configuration/reference audit
+public/assets/css/delete-profile.css	application or project source	2245	Retained; reviewed within source/configuration/reference audit
+public/assets/css/design-preview.css	application or project source	7611	Retained; reviewed within source/configuration/reference audit
+public/assets/css/edit-profile.css	application or project source	12543	Retained; reviewed within source/configuration/reference audit
+public/assets/css/faqs.css	application or project source	4348	Retained; reviewed within source/configuration/reference audit
+public/assets/css/interests.css	application or project source	15475	Retained; reviewed within source/configuration/reference audit
+public/assets/css/landing.css	application or project source	27215	Retained; reviewed within source/configuration/reference audit
+public/assets/css/legal-pages.css	retained removal candidate	4645	Unreferenced directly served CSS
+public/assets/css/login.css	application or project source	23830	Retained; reviewed within source/configuration/reference audit
+public/assets/css/member-terms.css	application or project source	2274	Retained; reviewed within source/configuration/reference audit
+public/assets/css/memberships.css	application or project source	7078	Retained; reviewed within source/configuration/reference audit
+public/assets/css/privacy-policies.css	application or project source	2102	Retained; reviewed within source/configuration/reference audit
+public/assets/css/privacy-policy.css	retained removal candidate	1760	Unreferenced directly served CSS
+public/assets/css/profile-detail.css	application or project source	30612	Retained; reviewed within source/configuration/reference audit
+public/assets/css/public-cta.css	application or project source	2027	Retained; reviewed within source/configuration/reference audit
+public/assets/css/public-footer.css	application or project source	1411	Retained; reviewed within source/configuration/reference audit
+public/assets/css/public-pages-v2.css	application or project source	6805	Retained; reviewed within source/configuration/reference audit
+public/assets/css/public-shell.css	application or project source	4626	Retained; reviewed within source/configuration/reference audit
+public/assets/css/quick-search.css	application or project source	12058	Retained; reviewed within source/configuration/reference audit
+public/assets/css/rateus.css	application or project source	2735	Retained; reviewed within source/configuration/reference audit
+public/assets/css/refund-policy.css	retained removal candidate	1215	Unreferenced directly served CSS
+public/assets/css/search-by-id.css	application or project source	15859	Retained; reviewed within source/configuration/reference audit
+public/assets/css/search-results.css	application or project source	14398	Retained; reviewed within source/configuration/reference audit
+public/assets/css/signup.css	application or project source	11813	Retained; reviewed within source/configuration/reference audit
+public/assets/css/style.css	application or project source	54265	Retained; reviewed within source/configuration/reference audit
+public/assets/css/success-stories.css	application or project source	21642	Retained; reviewed within source/configuration/reference audit
+public/assets/css/terms-and-conditions.css	retained removal candidate	1575	Unreferenced directly served CSS
+public/assets/css/theme-overrides.css	application or project source	5902	Retained; reviewed within source/configuration/reference audit
+public/assets/css/toast-manager.css	application or project source	1211	Retained; reviewed within source/configuration/reference audit
+public/assets/css/verify-account.css	application or project source	8374	Retained; reviewed within source/configuration/reference audit
+public/assets/css/view-my-profile.css	retained removal candidate	26818	Unreferenced directly served CSS
+public/assets/css/viewed-contact.css	application or project source	1773	Retained; reviewed within source/configuration/reference audit
+public/assets/css/wallet.css	application or project source	16502	Retained; reviewed within source/configuration/reference audit
+public/assets/images/dev-bhoomi-rishtey-logo.png	image or upload	540913	Retained; may be referenced dynamically or from database records
+public/assets/images/dogri-rishtey-logo.png	image or upload	540913	Retained; may be referenced dynamically or from database records
+public/assets/images/gallpakki-logo.png	image or upload	540913	Retained; may be referenced dynamically or from database records
+public/assets/images/hero-devbhoomi.jpg	image or upload	2378807	Retained; may be referenced dynamically or from database records
+public/assets/images/hero-dogri.jpg	image or upload	2378807	Retained; may be referenced dynamically or from database records
+public/assets/images/hero-gallpakki.jpg	image or upload	2378807	Retained; may be referenced dynamically or from database records
+public/assets/images/hero-himrishtey.jpg	image or upload	2378807	Retained; may be referenced dynamically or from database records
+public/assets/images/himrishtey-logo.png	image or upload	540913	Retained; may be referenced dynamically or from database records
+public/assets/images/himrishtey.gif	image or upload	557068	Retained; may be referenced dynamically or from database records
+public/assets/images/home/banner.png	image or upload	1796054	Retained; may be referenced dynamically or from database records
+public/assets/images/home/dogri-hero.png	image or upload	1906160	Retained; may be referenced dynamically or from database records
+public/assets/images/home/gallpakki-hero.png	image or upload	2113228	Retained; may be referenced dynamically or from database records
+public/assets/images/landing-hero-v2.png	image or upload	1796054	Retained; may be referenced dynamically or from database records
+public/assets/images/login-hero-himrishtey.png	image or upload	1818705	Retained; may be referenced dynamically or from database records
+public/assets/images/login.jpg	image or upload	198124	Retained; may be referenced dynamically or from database records
+public/assets/images/logo.png	image or upload	13993	Retained; may be referenced dynamically or from database records
+public/assets/images/verify-mobile-art.png	image or upload	2378807	Retained; may be referenced dynamically or from database records
+public/assets/js/advanced-search.js	application or project source	11744	Retained; reviewed within source/configuration/reference audit
+public/assets/js/change-password.js	application or project source	2853	Retained; reviewed within source/configuration/reference audit
+public/assets/js/delete-profile.js	application or project source	2086	Retained; reviewed within source/configuration/reference audit
+public/assets/js/edit-profile.js	application or project source	30614	Retained; reviewed within source/configuration/reference audit
+public/assets/js/interests.js	application or project source	18616	Retained; reviewed within source/configuration/reference audit
+public/assets/js/landing.js	retained removal candidate	6049	Unreferenced directly served JavaScript (resource versions remain active)
+public/assets/js/login.js	application or project source	22895	Retained; reviewed within source/configuration/reference audit
+public/assets/js/memberships.js	application or project source	5001	Retained; reviewed within source/configuration/reference audit
+public/assets/js/privacy-policies.js	retained removal candidate	160	Unreferenced directly served JavaScript (resource versions remain active)
+public/assets/js/profile-detail.js	application or project source	27416	Retained; reviewed within source/configuration/reference audit
+public/assets/js/profile-photo.js	application or project source	1169	Retained; reviewed within source/configuration/reference audit
+public/assets/js/quick-search.js	application or project source	21042	Retained; reviewed within source/configuration/reference audit
+public/assets/js/script.js	application or project source	17194	Retained; reviewed within source/configuration/reference audit
+public/assets/js/search-by-id.js	application or project source	19958	Retained; reviewed within source/configuration/reference audit
+public/assets/js/search-home-member.js	application or project source	4027	Retained; reviewed within source/configuration/reference audit
+public/assets/js/search-results.js	application or project source	12130	Retained; reviewed within source/configuration/reference audit
+public/assets/js/signup.js	application or project source	23401	Retained; reviewed within source/configuration/reference audit
+public/assets/js/success-stories.js	application or project source	14172	Retained; reviewed within source/configuration/reference audit
+public/assets/js/toast-manager.js	application or project source	1606	Retained; reviewed within source/configuration/reference audit
+public/assets/js/upload-photos.js	application or project source	3197	Retained; reviewed within source/configuration/reference audit
+public/assets/js/verify-account.js	application or project source	7153	Retained; reviewed within source/configuration/reference audit
+public/assets/js/wallet.js	application or project source	19032	Retained; reviewed within source/configuration/reference audit
+public/build/*	dependency or runtime group	731852	3 files classified as a group; not individually marked for deletion
+public/favicon.ico	static media	0	Retained asset; reference absence alone is not deletion evidence
+public/images/profile_photos/1785734336_Screenshot From 2026-08-01 14-16-42.png	image or upload	42429	Retained; may be referenced dynamically or from database records
+public/images/profile_photos/1785734405_images.jpeg	image or upload	7185	Retained; may be referenced dynamically or from database records
+public/images/profile_photos/1785924168_img.jpeg	image or upload	28106	Retained; may be referenced dynamically or from database records
+public/images/profile_photos/1786003469_images.jpeg	image or upload	7185	Retained; may be referenced dynamically or from database records
+public/images/profile_photos/1786018406_images.jpeg	image or upload	7185	Retained; may be referenced dynamically or from database records
+public/images/profile_photos/boy.jpg	image or upload	37349	Retained; may be referenced dynamically or from database records
+public/images/profile_photos/girl.jpg	image or upload	17852	Retained; may be referenced dynamically or from database records
+public/index.php	application or project source	1710	Retained; reviewed within source/configuration/reference audit
+public/photos/photo/member-photo-20.jpeg	image or upload	34643	Retained; may be referenced dynamically or from database records
+public/photos/photo/member-photo-20.webp	image or upload	26144	Retained; may be referenced dynamically or from database records
+public/photos/photo/member-photo-27585.jpeg	image or upload	11340	Retained; may be referenced dynamically or from database records
+public/robots.txt	application or project source	24	Retained; reviewed within source/configuration/reference audit
+public/sw.js	application or project source	244	Retained; reviewed within source/configuration/reference audit
+public/uploads/gallery/photo_1787743596_6a8ecd6ccb322.jpg	image or upload	67351	Retained; may be referenced dynamically or from database records
+public/uploads/gallery/photo_1787814410_6a8fe20a0ead2.jpeg	image or upload	11340	Retained; may be referenced dynamically or from database records
+public/uploads/gallery/photo_1787825379_6a900ce3763a3.jpeg	image or upload	28106	Retained; may be referenced dynamically or from database records
+public/uploads/gallery/photo_1787825379_6a900ce3773fb.jpeg	image or upload	7185	Retained; may be referenced dynamically or from database records
+public/uploads/gallery/photo_1788622230_6a9c3596c4a6b.png	image or upload	547	Retained; may be referenced dynamically or from database records
+public/uploads/gallery/photo_1788622299_6a9c35dba1cc3.png	image or upload	547	Retained; may be referenced dynamically or from database records
+public/uploads/success-stories/default-story.png	image or upload	1154425	Retained; may be referenced dynamically or from database records
+public/uploads/success-stories/story_1785477068_6a6c37cc05b8a.jpeg	image or upload	95571	Retained; may be referenced dynamically or from database records
+resources/css/home/about.css	application or project source	2997	Retained; reviewed within source/configuration/reference audit
+resources/css/home/base.css	application or project source	20485	Retained; reviewed within source/configuration/reference audit
+resources/css/home/blog.css	application or project source	6275	Retained; reviewed within source/configuration/reference audit
+resources/css/home/call-to-action.css	application or project source	6370	Retained; reviewed within source/configuration/reference audit
+resources/css/home/components.css	application or project source	10260	Retained; reviewed within source/configuration/reference audit
+resources/css/home/dark-theme.css	application or project source	9808	Retained; reviewed within source/configuration/reference audit
+resources/css/home/faqs.css	application or project source	4784	Retained; reviewed within source/configuration/reference audit
+resources/css/home/footer.css	application or project source	7750	Retained; reviewed within source/configuration/reference audit
+resources/css/home/header.css	application or project source	8315	Retained; reviewed within source/configuration/reference audit
+resources/css/home/home.css	application or project source	434	Retained; reviewed within source/configuration/reference audit
+resources/css/home/layout.css	application or project source	6220	Retained; reviewed within source/configuration/reference audit
+resources/css/home/legal.css	application or project source	5471	Retained; reviewed within source/configuration/reference audit
+resources/css/home/login.css	application or project source	14029	Retained; reviewed within source/configuration/reference audit
+resources/css/home/public-cta.css	application or project source	3351	Retained; reviewed within source/configuration/reference audit
+resources/css/home/public-pages.css	application or project source	6805	Retained; reviewed within source/configuration/reference audit
+resources/css/home/search-form.css	application or project source	2887	Retained; reviewed within source/configuration/reference audit
+resources/css/home/toast.css	application or project source	1288	Retained; reviewed within source/configuration/reference audit
+resources/css/site-theme.css	application or project source	3363	Retained; reviewed within source/configuration/reference audit
+resources/images/home/banner.png	static media	1796054	Retained asset; reference absence alone is not deletion evidence
+resources/images/home/gallpakki-banner.png	static media	2113228	Retained asset; reference absence alone is not deletion evidence
+resources/js/app.js	retained removal candidate	22	Unused alternative frontend entry points
+resources/js/bootstrap.js	retained removal candidate	1235	Unused alternative frontend entry points
+resources/js/home.js	application or project source	606	Retained; reviewed within source/configuration/reference audit
+resources/js/home/animations.js	application or project source	924	Retained; reviewed within source/configuration/reference audit
+resources/js/home/icons.js	application or project source	566	Retained; reviewed within source/configuration/reference audit
+resources/js/home/navigation.js	application or project source	832	Retained; reviewed within source/configuration/reference audit
+resources/js/public/landing.js	application or project source	6049	Retained; reviewed within source/configuration/reference audit
+resources/js/public/login.js	application or project source	23723	Retained; reviewed within source/configuration/reference audit
+resources/js/public/privacy-policies.js	application or project source	160	Retained; reviewed within source/configuration/reference audit
+resources/js/public/script.js	application or project source	15817	Retained; reviewed within source/configuration/reference audit
+resources/js/public/signup.js	application or project source	24266	Retained; reviewed within source/configuration/reference audit
+resources/js/public/toast-manager.js	application or project source	1606	Retained; reviewed within source/configuration/reference audit
+resources/js/public/upload-photos.js	application or project source	3197	Retained; reviewed within source/configuration/reference audit
+resources/js/theme.js	application or project source	1908	Retained; reviewed within source/configuration/reference audit
+resources/sass/_variables.scss	retained removal candidate	138	Unused alternative frontend entry points
+resources/sass/app.scss	retained removal candidate	152	Unused alternative frontend entry points
+resources/views/auth/forgot-password.blade.php	application or project source	44425	Retained; reviewed within source/configuration/reference audit
+resources/views/auth/login.blade.php	application or project source	19258	Retained; reviewed within source/configuration/reference audit
+resources/views/auth/passwords/email.blade.php	retained removal candidate	1557	Inactive mail and password-reset scaffolding
+resources/views/auth/passwords/reset.blade.php	retained removal candidate	2290	Inactive mail and password-reset scaffolding
+resources/views/blog/index.blade.php	application or project source	2622	Retained; reviewed within source/configuration/reference audit
+resources/views/blog/show.blade.php	application or project source	2212	Retained; reviewed within source/configuration/reference audit
+resources/views/dashboard/home.blade.php	application or project source	14953	Retained; reviewed within source/configuration/reference audit
+resources/views/dashboard/home/matching-profiles.blade.php	application or project source	1331	Retained; reviewed within source/configuration/reference audit
+resources/views/dashboard/home/recent-profiles.blade.php	application or project source	702	Retained; reviewed within source/configuration/reference audit
+resources/views/dashboard/home/shortlisted-profiles.blade.php	application or project source	1232	Retained; reviewed within source/configuration/reference audit
+resources/views/dashboard/home/verified-profiles.blade.php	application or project source	791	Retained; reviewed within source/configuration/reference audit
+resources/views/dashboard/home/who-viewed-profiles.blade.php	application or project source	1237	Retained; reviewed within source/configuration/reference audit
+resources/views/dashboard/interest/interest-box.blade.php	application or project source	7398	Retained; reviewed within source/configuration/reference audit
+resources/views/dashboard/memberships/checkout.blade.php	application or project source	15909	Retained; reviewed within source/configuration/reference audit
+resources/views/dashboard/memberships/failed.blade.php	application or project source	9629	Retained; reviewed within source/configuration/reference audit
+resources/views/dashboard/memberships/index.blade.php	application or project source	1894	Retained; reviewed within source/configuration/reference audit
+resources/views/dashboard/memberships/plan.blade.php	application or project source	3109	Retained; reviewed within source/configuration/reference audit
+resources/views/dashboard/memberships/success.blade.php	application or project source	9430	Retained; reviewed within source/configuration/reference audit
+resources/views/dashboard/partials/profile-card.blade.php	application or project source	2642	Retained; reviewed within source/configuration/reference audit
+resources/views/dashboard/privacy.blade.php	application or project source	1021	Retained; reviewed within source/configuration/reference audit
+resources/views/dashboard/profile.blade.php	application or project source	6081	Retained; reviewed within source/configuration/reference audit
+resources/views/dashboard/profile/change-password.blade.php	application or project source	2743	Retained; reviewed within source/configuration/reference audit
+resources/views/dashboard/profile/complete-profile.blade.php	application or project source	28358	Retained; reviewed within source/configuration/reference audit
+resources/views/dashboard/profile/delete.blade.php	application or project source	2671	Retained; reviewed within source/configuration/reference audit
+resources/views/dashboard/profile/edit.blade.php	application or project source	71930	Retained; reviewed within source/configuration/reference audit
+resources/views/dashboard/profile/view-all-profiles.blade.php	application or project source	2050	Retained; reviewed within source/configuration/reference audit
+resources/views/dashboard/profile/view-my-profile.blade.php	application or project source	28873	Retained; reviewed within source/configuration/reference audit
+resources/views/dashboard/profile/view-profile.blade.php	application or project source	40267	Retained; reviewed within source/configuration/reference audit
+resources/views/dashboard/rateus.blade.php	application or project source	2143	Retained; reviewed within source/configuration/reference audit
+resources/views/dashboard/referral/referral.blade.php	application or project source	2613	Retained; reviewed within source/configuration/reference audit
+resources/views/dashboard/refund.blade.php	application or project source	1086	Retained; reviewed within source/configuration/reference audit
+resources/views/dashboard/search/advanced-search.blade.php	application or project source	24424	Retained; reviewed within source/configuration/reference audit
+resources/views/dashboard/search/quick-search.blade.php	application or project source	6374	Retained; reviewed within source/configuration/reference audit
+resources/views/dashboard/search/search-by-id.blade.php	application or project source	10157	Retained; reviewed within source/configuration/reference audit
+resources/views/dashboard/search/search-results.blade.php	application or project source	6896	Retained; reviewed within source/configuration/reference audit
+resources/views/dashboard/success_stories/success-stories.blade.php	application or project source	7729	Retained; reviewed within source/configuration/reference audit
+resources/views/dashboard/terms.blade.php	application or project source	1045	Retained; reviewed within source/configuration/reference audit
+resources/views/dashboard/verify_account/verify-account.blade.php	application or project source	6155	Retained; reviewed within source/configuration/reference audit
+resources/views/dashboard/viewed_contacts/index.blade.php	application or project source	2022	Retained; reviewed within source/configuration/reference audit
+resources/views/dashboard/wallet/index.blade.php	application or project source	7111	Retained; reviewed within source/configuration/reference audit
+resources/views/emails/registeremail.blade.php	application or project source	161	Retained; reviewed within source/configuration/reference audit
+resources/views/layouts/app.blade.php	application or project source	3633	Retained; reviewed within source/configuration/reference audit
+resources/views/layouts/dashboard.blade.php	application or project source	13995	Retained; reviewed within source/configuration/reference audit
+resources/views/layouts/public.blade.php	application or project source	1680	Retained; reviewed within source/configuration/reference audit
+resources/views/pages/about-us.blade.php	application or project source	4112	Retained; reviewed within source/configuration/reference audit
+resources/views/pages/child-safety.blade.php	application or project source	3014	Retained; reviewed within source/configuration/reference audit
+resources/views/pages/contact.blade.php	application or project source	8283	Retained; reviewed within source/configuration/reference audit
+resources/views/pages/design-preview.blade.php	application or project source	5986	Retained; reviewed within source/configuration/reference audit
+resources/views/pages/faqs.blade.php	application or project source	4414	Retained; reviewed within source/configuration/reference audit
+resources/views/pages/home.blade.php	application or project source	15613	Retained; reviewed within source/configuration/reference audit
+resources/views/pages/pricing.blade.php	application or project source	1634	Retained; reviewed within source/configuration/reference audit
+resources/views/pages/privacy-policy.blade.php	application or project source	1414	Retained; reviewed within source/configuration/reference audit
+resources/views/pages/refund-policy.blade.php	application or project source	1491	Retained; reviewed within source/configuration/reference audit
+resources/views/pages/success-stories.blade.php	application or project source	7339	Retained; reviewed within source/configuration/reference audit
+resources/views/pages/terms-and-conditions.blade.php	application or project source	1406	Retained; reviewed within source/configuration/reference audit
+resources/views/partials/public-footer.blade.php	application or project source	4578	Retained; reviewed within source/configuration/reference audit
+resources/views/partials/public-header.blade.php	application or project source	3639	Retained; reviewed within source/configuration/reference audit
+routes/api.php	application or project source	572	Retained; reviewed within source/configuration/reference audit
+routes/auth.php	application or project source	2244	Retained; reviewed within source/configuration/reference audit
+routes/channels.php	application or project source	558	Retained; reviewed within source/configuration/reference audit
+routes/console.php	application or project source	592	Retained; reviewed within source/configuration/reference audit
+routes/member.php	application or project source	6600	Retained; reviewed within source/configuration/reference audit
+routes/public.php	application or project source	1498	Retained; reviewed within source/configuration/reference audit
+routes/web.php	application or project source	175	Retained; reviewed within source/configuration/reference audit
+server.php	application or project source	624	Retained; reviewed within source/configuration/reference audit
+storage/*	dependency or runtime group	6502569	321 files classified as a group; not individually marked for deletion
+tests/CreatesApplication.php	application or project source	380	Retained; reviewed within source/configuration/reference audit
+tests/Feature/ExampleTest.php	application or project source	380	Retained; reviewed within source/configuration/reference audit
+tests/Feature/ForgotPasswordViewTest.php	application or project source	338	Retained; reviewed within source/configuration/reference audit
+tests/Feature/MemberJourneyTest.php	application or project source	11368	Retained; reviewed within source/configuration/reference audit
+tests/Feature/SiteContextTest.php	application or project source	1882	Retained; reviewed within source/configuration/reference audit
+tests/TestCase.php	application or project source	550	Retained; reviewed within source/configuration/reference audit
+tests/Unit/ExampleTest.php	application or project source	264	Retained; reviewed within source/configuration/reference audit
+vendor/*	dependency or runtime group	72619455	9798 files classified as a group; not individually marked for deletion
+vite.config.js	application or project source	668	Retained; reviewed within source/configuration/reference audit

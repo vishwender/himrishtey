@@ -1,0 +1,337 @@
+/*
+|--------------------------------------------------------------------------
+| App Call To Action
+|--------------------------------------------------------------------------
+*/
+
+.public-site .app-cta {
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            112deg,
+            color-mix(
+                in srgb,
+                var(--brand) 10%,
+                var(--surface, #ffffff)
+            ),
+            color-mix(
+                in srgb,
+                var(--gold) 16%,
+                var(--surface-soft, #fff8f6)
+            )
+        );
+
+    color: var(--text, #211d1c);
+
+    border-top:
+        1px solid
+        color-mix(
+            in srgb,
+            var(--brand) 15%,
+            var(--border, #e8e4e2)
+        );
+
+    border-bottom:
+        1px solid
+        color-mix(
+            in srgb,
+            var(--brand) 15%,
+            var(--border, #e8e4e2)
+        );
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Decorative Heart
+|--------------------------------------------------------------------------
+*/
+
+.public-site .app-cta::after {
+    content: "♥";
+
+    position: absolute;
+    right: 2%;
+    bottom: -75px;
+
+    color: var(--brand);
+
+    opacity: 0.045;
+
+    font-family: var(--font-heading, "Playfair Display", serif);
+    font-size: 180px;
+    line-height: 1;
+
+    pointer-events: none;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| CTA Content
+|--------------------------------------------------------------------------
+*/
+
+.public-site .app-cta h2 {
+    position: relative;
+    z-index: 1;
+
+    color: var(--text, #211d1c);
+}
+
+.public-site .app-cta p {
+    position: relative;
+    z-index: 1;
+
+    color: var(--muted, #716a68);
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Phone Illustration
+|--------------------------------------------------------------------------
+*/
+
+.public-site .app-cta .phone {
+    position: relative;
+    z-index: 1;
+
+    background: var(--brand);
+    color: #ffffff;
+
+    box-shadow:
+        0 14px 32px
+        color-mix(
+            in srgb,
+            var(--brand) 24%,
+            transparent
+        );
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| App Store Buttons
+|--------------------------------------------------------------------------
+*/
+
+.public-site .app-cta .store {
+    position: relative;
+    z-index: 1;
+
+    min-width: 170px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 11px 16px;
+
+    background: var(--surface, #ffffff);
+    color: var(--text, #211d1c);
+
+    border:
+        1px solid
+        var(--border, #e8e4e2);
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 8px 22px
+        rgba(30, 20, 20, 0.08);
+
+    font-size: 10px;
+    line-height: 1.15;
+}
+
+.public-site .app-cta a.store {
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.public-site .app-cta a.store:hover {
+    transform: translateY(-2px);
+
+    border-color:
+        color-mix(
+            in srgb,
+            var(--brand) 35%,
+            var(--border, #e8e4e2)
+        );
+
+    box-shadow:
+        0 12px 28px
+        rgba(30, 20, 20, 0.13);
+}
+
+.public-site .app-cta a.store:focus-visible {
+    outline: 2px solid var(--brand);
+    outline-offset: 3px;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Store Button Text
+|--------------------------------------------------------------------------
+*/
+
+.public-site .app-cta .store span {
+    display: flex;
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+.public-site .app-cta .store b {
+    color: var(--text, #211d1c);
+
+    font-size: 17px;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Store Icons
+|--------------------------------------------------------------------------
+*/
+
+.public-site .app-cta .store-icon {
+    width: 27px;
+    height: 30px;
+
+    flex: 0 0 auto;
+}
+
+.public-site .app-cta .apple-icon {
+    color: #4e6fae;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Primary CTA Button
+|--------------------------------------------------------------------------
+*/
+
+.public-site .app-cta .cta-white {
+    position: relative;
+    z-index: 1;
+
+    gap: 11px;
+
+    padding: 17px 25px;
+
+    background: var(--brand);
+    color: #ffffff;
+
+    border-color: var(--brand);
+    border-radius: 999px;
+
+    box-shadow:
+        0 10px 26px
+        color-mix(
+            in srgb,
+            var(--brand) 24%,
+            transparent
+        );
+
+    transition:
+        transform 0.2s ease,
+        filter 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.public-site .app-cta .cta-white:hover {
+    transform: translateY(-1px);
+
+    filter: brightness(0.92);
+}
+
+.public-site .app-cta .cta-white:focus-visible {
+    outline: 2px solid var(--brand);
+    outline-offset: 3px;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| CTA Profile Icon
+|--------------------------------------------------------------------------
+*/
+
+.public-site .app-cta .cta-profile-icon {
+    width: 24px;
+    height: 24px;
+
+    flex: 0 0 auto;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Tablet
+|--------------------------------------------------------------------------
+*/
+
+@media (max-width: 900px) {
+
+    .public-site .app-cta {
+        flex-wrap: wrap;
+    }
+
+    .public-site .app-cta > div:nth-child(2) {
+        flex: 1 1 100%;
+
+        text-align: center;
+    }
+
+    .public-site .app-cta h2 {
+        text-align: center;
+    }
+
+    .public-site .app-cta .store {
+        min-width: 180px;
+    }
+
+}
+
+
+/*
+|--------------------------------------------------------------------------
+| Mobile
+|--------------------------------------------------------------------------
+*/
+
+@media (max-width: 600px) {
+
+    .public-site .app-cta {
+        align-items: center;
+    }
+
+    .public-site .app-cta .store,
+    .public-site .app-cta .cta-white {
+        width: min(100%, 240px);
+    }
+
+}

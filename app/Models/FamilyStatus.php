@@ -1,0 +1,13 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class FamilyStatus extends Model
+{
+    protected $table = 'family_status';
+    public $timestamps = false;
+    use HasFactory;
+}
