@@ -97,7 +97,7 @@
                     <label for="contact-subject">Subject <span>*</span></label>
                     <select id="contact-subject" name="subject" required @error('subject') aria-invalid="true" aria-describedby="subject-error" @enderror>
                         <option value="">Choose a topic</option>
-                        @foreach (['Profile or account help', 'Membership or payment', 'Report a concern', 'Matchmaking assistance', 'Feedback or suggestion', 'Other inquiry'] as $subject)
+                        @foreach (\App\Models\ContactMessage::SUBJECTS as $subject)
                             <option value="{{ $subject }}" @selected(old('subject') === $subject)>{{ $subject }}</option>
                         @endforeach
                     </select>

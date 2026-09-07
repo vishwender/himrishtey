@@ -12,7 +12,10 @@ use App\Models\Member;
 use App\Models\Page;
 use App\Models\MembershipPlan;
 use App\Models\ContactMessage;
+use App\Mail\ContactInquiry;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Validation\Rule;
 
 class WelcomeController extends Controller
 {
@@ -71,7 +74,7 @@ class WelcomeController extends Controller
             'email' => ['required', 'email:rfc', 'max:190'],
             'phone' => ['nullable', 'string', 'max:30', 'regex:/^[0-9+()\-\s]+$/'],
             'profile_id' => ['nullable', 'string', 'max:50'],
-            'subject' => ['required', 'string', 'max:150'],
+            'subject' => ['required', 'string', Rule::in(ContactMessage::SUBJECTS)],
             'message' => ['required', 'string', 'min:10', 'max:3000'],
             'website' => ['nullable', 'max:0'],
         ], [
@@ -81,11 +84,20 @@ class WelcomeController extends Controller
 
         unset($validated['website']);
 
-        ContactMessage::create($validated + [
+        $message = ContactMessage::create($validated + [
             'site_key' => config('site.current.key'),
             'ip_address' => $request->ip(),
             'user_agent' => mb_substr((string) $request->userAgent(), 0, 1000),
         ]);
+
+        $supportEmail = config('site.current.support_email') ?: config('mail.from.address');
+        try {
+            Mail::to($supportEmail)->send(new ContactInquiry($message));
+        } catch (\Throwable $exception) {
+            // The inquiry is already saved; a mail outage must not lose it or
+            // prompt the visitor to submit a duplicate.
+            report($exception);
+        }
 
         return redirect()->route('contact-us')->with(
             'contact_success',
