@@ -5,6 +5,7 @@ return [
 
     'sites' => [
         'himrishtey.com' => [
+            'search_state' => 'Himachal Pradesh',
             'hosts' => ['himrishtey.ddev.site'],
             'name' => env('SITE1_NAME', 'Himrishtey'),
             'display_name' => env('SITE1_DISPLAY_NAME', 'HimRishtey'),
@@ -42,6 +43,7 @@ return [
             'ios_app_url' => env('SITE1_IOS_APP_URL', 'https://apps.apple.com/in/search?term=HimRishtey'),
         ],
         'dogririshtey.com' => [
+            'search_state' => 'Jammu and Kashmir',
             'hosts' => ['dogririshtey.ddev.site'],
             'name' => env('SITE2_NAME', 'Dogri Rishtey'),
             'display_name' => env('SITE2_DISPLAY_NAME', 'Dogri Rishtey'),
@@ -79,6 +81,7 @@ return [
             'ios_app_url' => env('SITE2_IOS_APP_URL'),
         ],
         'gallpakki.com' => [
+            'search_state' => 'Punjab',
             'hosts' => ['gallpakki.ddev.site'],
             'name' => env('SITE3_NAME', 'Gallpakki'),
             'display_name' => env('SITE3_DISPLAY_NAME', 'Gallpakki'),
@@ -116,6 +119,7 @@ return [
             'ios_app_url' => env('SITE3_IOS_APP_URL'),
         ],
         'devbhoomirishte.com' => [
+            'search_state' => 'Uttarakhand',
             'hosts' => ['devbhoomirishte.ddev.site', 'devbhoomirishtey.com', 'devbhoomirishtey.ddev.site'],
             'name' => env('SITE4_NAME', 'Dev Bhoomi Rishtey'),
             'display_name' => env('SITE4_DISPLAY_NAME', 'Dev Bhoomi Rishtey'),

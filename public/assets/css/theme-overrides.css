@@ -190,3 +190,29 @@
   color: #fff;
   border: 1px solid rgba(255,255,255,0.12);
 }
+
+/* Dashboard sidebar follows the current site's palette. */
+.sidebar {
+  --color-primary: var(--site-primary);
+  --color-primary-hover: color-mix(in srgb, var(--site-primary) 80%, #000);
+  --color-primary-light: color-mix(in srgb, var(--site-primary) 14%, var(--color-surface));
+}
+
+.sidebar .sidebar-header {
+  background: linear-gradient(135deg, var(--site-primary), var(--site-secondary));
+}
+
+.sidebar .sidebar-plan-name {
+  background: none;
+  -webkit-text-fill-color: currentColor;
+  color: #fff;
+}
+
+.sidebar .sidebar-user-name,
+.sidebar .sidebar-value {
+  color: #fff;
+}
+
+.sidebar .sidebar-label {
+  color: rgba(255, 255, 255, .78);
+}

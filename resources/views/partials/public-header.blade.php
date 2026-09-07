@@ -93,7 +93,7 @@
 
             <a
                 class="solid public-solid public-cta public-cta-primary"
-                href="{{ route('welcome') }}"
+                href="{{ route('home') }}"
             >
                 My Account
             </a>

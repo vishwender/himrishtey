@@ -24,6 +24,7 @@ class WelcomeController extends Controller
         return view('pages.home', [
             'data' => $this->homeSummary(),
             'featuredProfiles' => app(\App\Services\HomepageProfiles::class)->get(),
+            'searchCities' => app(\App\Services\HomepageCities::class)->get(),
         ]);
     }
 

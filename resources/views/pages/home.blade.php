@@ -99,18 +99,15 @@
                      </select>
                  </span>
              </label>
-             <label for="stateName">
-                 <span>Location</span>
+             <label for="cityName">
+                 <span>City</span>
                  <span class="finder-control">
                      <i data-lucide="map-pin" aria-hidden="true"></i>
-                     <select id="stateName" name="state_name">
-                         <option value="">Any</option>
-                         <option value="Himachal Pradesh">Himachal Pradesh</option>
-                         <option value="Jammu and Kashmir">Jammu and Kashmir</option>
-                         <option value="Punjab">Punjab</option>
-                         <option value="Chandigarh">Chandigarh</option>
-                         <option value="Delhi">Delhi</option>
-                         <option value="Uttarakhand">Uttarakhand</option>
+                     <select id="cityName" name="city_name">
+                         <option value="">Any city</option>
+                         @foreach($searchCities as $city)
+                             <option value="{{ $city }}">{{ $city }}</option>
+                         @endforeach
                      </select>
                  </span>
              </label>

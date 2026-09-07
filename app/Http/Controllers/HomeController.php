@@ -767,6 +767,7 @@ class HomeController extends Controller
             'cast',
             'mother_tongue',
             'state_name',
+            'city_name',
             'education',
             'employed_in',
         ];
@@ -790,6 +791,7 @@ class HomeController extends Controller
         $maritalStatus = $request->input('marital_status');
         $lookingFor = $request->input('looking_for');
         $stateName = $request->input('state_name');
+        $cityName = $request->input('city_name');
 
         /*
     |--------------------------------------------------------------------------
@@ -856,6 +858,10 @@ class HomeController extends Controller
 
         if (!empty($partnerCasts)) {
             $query->whereIn('cast', $partnerCasts);
+        }
+
+        if (filled($cityName)) {
+            $query->where('city_living_in', $cityName);
         }
 
         if (!empty($stateName)) {
