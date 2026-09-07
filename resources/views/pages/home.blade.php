@@ -136,10 +136,14 @@
          </section>
 
          @if($featuredProfiles->isNotEmpty())
-         <section class="matches wrap" id="matches">
+         <section class="matches wrap" id="matches" data-profile-slider aria-label="Verified members" aria-roledescription="carousel">
              <h2>Meet our verified members</h2>
              <div class="ornament"><i data-lucide="heart" aria-hidden="true"></i></div>
-             <div class="cards">
+             <div class="profile-slider-controls" hidden>
+                 <button type="button" data-slider-prev aria-label="Previous profiles" aria-controls="verified-profile-track">←</button>
+                 <button type="button" data-slider-next aria-label="Next profiles" aria-controls="verified-profile-track">→</button>
+             </div>
+             <div class="cards profile-slider-track" id="verified-profile-track" tabindex="0" aria-label="Verified profiles; use arrow keys to browse">
                  @foreach($featuredProfiles as $profile)
                  @php
                  $photoPath = 'photos/photo/' . basename($profile->photo);
@@ -218,7 +222,13 @@
 
          <section class="communities wrap">
              <h2>Explore by community</h2>
-             <div class="community-grid">@foreach(['Himachali Matches','Jammu Matches','Kangra Matches','Kullu Matches','Professionals','Recently Joined'] as $i=>$community)<a href="{{ route('login-form') }}#register" style="--bg:url('{{ asset(['assets/images/hero-devbhoomi.jpg','assets/images/hero-dogri.jpg','assets/images/hero-himrishtey.jpg','assets/images/hero-gallpakki.jpg','uploads/gallery/photo_1787814410_6a8fe20a0ead2.jpeg','uploads/gallery/photo_1787743596_6a8ecd6ccb322.jpg'][$i]) }}')"><b>{{ $community }}</b></a>@endforeach</div>
+             <div class="community-grid">
+                 @foreach(['Himachali Matches','Jammu Matches','Kangra Matches','Kullu Matches','Professionals','Recently Joined'] as $i=>$community)
+                 <a href="{{ route('login-form') }}#register" style="--bg:url('{{ asset(['assets/images/hero-devbhoomi.jpg','assets/images/hero-dogri.jpg','assets/images/hero-himrishtey.jpg','assets/images/hero-gallpakki.jpg','uploads/gallery/photo_1787814410_6a8fe20a0ead2.jpeg','uploads/gallery/photo_1787743596_6a8ecd6ccb322.jpg'][$i]) }}')">
+                     <b>{{ $community }}</b>
+                 </a>
+                 @endforeach
+             </div>
          </section>
 
          <section class="app-cta">

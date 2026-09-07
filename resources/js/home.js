@@ -1,4 +1,5 @@
 import './theme';
+import { initializeProfileSlider } from './home/profile-slider';
 import './public/landing.js';
 import './public/login.js';
 import './public/privacy-policies.js';
@@ -14,4 +15,5 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeRevealAnimations();
     initializeLucideIcons();
     initializeNavigation();
+    initializeProfileSlider();
 });
