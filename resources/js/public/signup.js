@@ -526,14 +526,33 @@
   }
 
   if (continuePhotoBtn && photoInput) {
-    continuePhotoBtn.addEventListener('click', () => {
-      setLoading(continuePhotoBtn, true);
+    continuePhotoBtn.addEventListener('click', async () => {
       const file = photoInput.files && photoInput.files[0];
-      console.log(file);
-      fakeSubmit(() => {
-        setLoading(continuePhotoBtn, false);
+      if (!file) return;
+      setLoading(continuePhotoBtn, true);
+      const errorElement = document.getElementById('photoError');
+      errorElement.textContent = '';
+      try {
+        const formData = new FormData();
+        formData.append('photo', file);
+        const response = await fetch('/complete-profile', {
+          method: 'POST',
+          headers: {
+            'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content,
+            'Accept': 'application/json',
+          },
+          body: formData,
+        });
+        const result = await response.json();
+        if (!response.ok || !result.success) {
+          throw new Error(result.errors?.photo?.[0] || result.message || 'Photo upload failed. Please try again.');
+        }
         finishSignup(true);
-      });
+      } catch (error) {
+        errorElement.textContent = error.message || 'Photo upload failed. Please try again.';
+      } finally {
+        setLoading(continuePhotoBtn, false);
+      }
     });
   }
 

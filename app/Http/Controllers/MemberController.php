@@ -81,8 +81,6 @@ class MemberController extends Controller
             'job_location',
             'occupation',
             'annual_income',
-            'photo',
-            'photo_approved',
             'profile_completed',
         ];
         $data = $request->only($allowedFields);
@@ -93,28 +91,11 @@ class MemberController extends Controller
             $member->birth_date_time = $date . ' ' . $request->time_of_birth;
         }
 
-        //upload profile photo if exists in request/
-
         if ($request->hasFile('photo')) {
-
             $request->validate([
-                'photo' => 'image|mimes:jpg,jpeg,png,webp|max:5120',
+                'photo' => 'required|image|mimes:jpg,jpeg,png,webp|max:5120',
             ]);
-
-            $file = $request->file('photo');
-            $filename = time() . '_' . $member->id . '.' . $file->getClientOriginalExtension();
-            $destination = public_path('images/profile_photos');
-            // Delete old photo
-            if (
-                !empty($member->photo) &&
-                file_exists($destination . '/' . $member->photo)
-            ) {
-                unlink($destination . '/' . $member->photo);
-            }
-            // Save new photo
-            $file->move($destination, $filename);
-            $data['photo'] = $filename;
-            //$data['photo_approved'] = 'No';
+            app(\App\Services\ProfilePhotoStorage::class)->save($member, $request->file('photo'));
         }
         $member->update($data);
         return response()->json([

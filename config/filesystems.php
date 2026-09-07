@@ -30,6 +30,15 @@ return [
 
     'disks' => [
 
+        // Preserve legacy profile URLs while using Laravel's filesystem API.
+        'profile_photos' => [
+            'driver' => 'local',
+            'root' => public_path('photos/photo'),
+            'url' => env('APP_URL').'/photos/photo',
+            'visibility' => 'public',
+            'throw' => true,
+        ],
+
         'local' => [
             'driver' => 'local',
             'root' => storage_path('app'),

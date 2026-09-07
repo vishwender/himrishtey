@@ -2667,28 +2667,9 @@ class HomeController extends Controller
             'photo' => 'required|image|mimes:jpg,jpeg,png,webp|max:2048',
         ]);
 
-        $user = Auth::user();
-        $id = $user->id;
-
-        // Delete old photo
-        if ($user->photo) {
-            $oldPhoto = public_path('photos/photo/' . $user->profile_photo);
-
-            if (File::exists($oldPhoto)) {
-                File::delete($oldPhoto);
-            }
-        }
-
-        // Upload new photo
-        $file = $request->file('photo');
-        $extension = $file->getClientOriginalExtension();
-
-        $filename = 'member-photo-' . $id . '.' . $extension;
-
-        $file->move(public_path('photos/photo'), $filename);
-
-        $user->photo = $filename;
-        $user->save();
+        $user = Auth::guard('member')->user();
+        abort_unless($user, 401);
+        $filename = app(\App\Services\ProfilePhotoStorage::class)->save($user, $request->file('photo'));
 
         return response()->json([
             'success' => true,
