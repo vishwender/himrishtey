@@ -21,7 +21,10 @@ class WelcomeController extends Controller
 {
     public function index()
     {
-        return view('pages.home', ['data' => $this->homeSummary()]);
+        return view('pages.home', [
+            'data' => $this->homeSummary(),
+            'featuredProfiles' => app(\App\Services\HomepageProfiles::class)->get(),
+        ]);
     }
 
     public function designPreview()

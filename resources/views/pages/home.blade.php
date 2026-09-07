@@ -135,32 +135,33 @@
              </article>
          </section>
 
-         @php
-         $cards=[
-         ['Neha Thakur','27','5′4″ · Shimla','Software Engineer','1786018406_images.jpeg'],
-         ['Rahul Sharma','30','5′10″ · Kangra','Chartered Accountant','1786003469_images.jpeg'],
-         ['Priya Chauhan','26','5′3″ · Mandi','Teacher','1785924168_img.jpeg'],
-         ['Amit Verma','29','5′11″ · Hamirpur','Government Officer','member-photo-20.jpeg'],
-         ['Anjali Dogra','28','5′5″ · Jammu','Bank Manager','1785734405_images.jpeg'],
-         ['Vikram Rana','31','6′0″ · Solan','Business Analyst','member-photo-27585.jpeg']];
-         @endphp
+         @if($featuredProfiles->isNotEmpty())
          <section class="matches wrap" id="matches">
-             <h2>Matches picked for you</h2>
+             <h2>Meet our verified members</h2>
              <div class="ornament"><i data-lucide="heart" aria-hidden="true"></i></div>
              <div class="cards">
-                 @foreach($cards as $index=>$card)
+                 @foreach($featuredProfiles as $profile)
+                 @php
+                     $photoPath = 'photos/photo/' . basename($profile->photo);
+                     $photoOrigin = config('site.sites')[$siteKey]['app_url'] ?? config('app.url');
+                     $photoUrl = is_file(public_path($photoPath))
+                         ? asset($photoPath)
+                         : rtrim($photoOrigin, '/') . '/' . $photoPath;
+                 @endphp
                  <article class="profile-card">
                      <div class="profile-photo">
-                         <img src="{{ str_starts_with($card[4],'member-') ? asset('photos/photo/'.$card[4]) : asset('images/profile_photos/'.$card[4]) }}" alt="{{ $card[0] }}" loading="lazy">
+                         <img src="{{ $photoUrl }}" alt="{{ $profile->full_name }}" loading="lazy">
                          <span>● Verified</span>
                      </div>
                      <div>
-                         <b>{{ $card[0] }}, {{ $card[1] }}</b>
-                         <small>{{ $card[2] }}<br>{{ $card[3] }}</small>
+                         <b>{{ $profile->full_name }}@if($profile->age), {{ $profile->age }}@endif</b>
+                         <small>{{ $profile->city_living_in }}<br>{{ $profile->occupation }}</small>
                      </div>
-                 </article>@endforeach
+                 </article>
+                 @endforeach
              </div><a class="more outline public-cta public-cta-secondary" href="{{ route('login-form') }}#register">View More Matches</a>
          </section>
+         @endif
 
          <section class="split wrap">
              <article class="how" id="how">
