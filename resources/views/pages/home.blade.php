@@ -142,11 +142,11 @@
              <div class="cards">
                  @foreach($featuredProfiles as $profile)
                  @php
-                     $photoPath = 'photos/photo/' . basename($profile->photo);
-                     $photoOrigin = config('site.sites')[$siteKey]['app_url'] ?? config('app.url');
-                     $photoUrl = is_file(public_path($photoPath))
-                         ? asset($photoPath)
-                         : rtrim($photoOrigin, '/') . '/' . $photoPath;
+                 $photoPath = 'photos/photo/' . basename($profile->photo);
+                 $photoOrigin = config('site.sites')[$siteKey]['app_url'] ?? config('app.url');
+                 $photoUrl = is_file(public_path($photoPath))
+                 ? asset($photoPath)
+                 : rtrim($photoOrigin, '/') . '/' . $photoPath;
                  @endphp
                  <article class="profile-card">
                      <div class="profile-photo">
@@ -159,7 +159,7 @@
                      </div>
                  </article>
                  @endforeach
-             </div><a class="more outline public-cta public-cta-secondary" href="{{ route('login-form') }}#register">View More Matches</a>
+             </div><a class="more outline public-cta public-cta-secondary" href="{{ route('login-form') }}#register">View More Profiles</a>
          </section>
          @endif
 
