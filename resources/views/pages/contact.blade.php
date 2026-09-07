@@ -1,11 +1,11 @@
-@extends('layouts.app')
+@extends('layouts.public')
 
 @section('title', 'Contact Us - ' . $siteName)
 @section('description', 'Contact the ' . $siteName . ' support team for help with your profile, membership, account, or matrimonial journey.')
 
-@section('styles')
+@push('head')
     <link rel="stylesheet" href="{{ asset('assets/css/contact.css') }}">
-@endsection
+@endpush
 
 @section('content')
 @php
@@ -13,7 +13,7 @@
         ? "1st Floor, Manali, Mandi - Pathankot Road\nOpp. Palam Hardware Kalu Ki Hatti\nBag Uparla, Palampur\nHimachal Pradesh 176102"
         : $siteSupportAddress;
 @endphp
-<main class="contact-page" id="main-content">
+<div class="contact-page" id="main-content">
     <section class="contact-hero" aria-labelledby="contact-title">
         <span class="contact-kicker">Contact Us</span>
         <h1 id="contact-title">How can we help?</h1>
@@ -117,5 +117,5 @@
             </form>
         </section>
     </div>
-</main>
+</div>
 @endsection
