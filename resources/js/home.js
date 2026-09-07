@@ -1,4 +1,4 @@
-import { initTheme } from './theme';
+import './theme';
 import './public/landing.js';
 import './public/login.js';
 import './public/privacy-policies.js';
@@ -13,6 +13,5 @@ import { initializeNavigation } from './home/navigation';
 document.addEventListener('DOMContentLoaded', () => {
     initializeRevealAnimations();
     initializeLucideIcons();
-    initTheme();
     initializeNavigation();
 });

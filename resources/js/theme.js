@@ -1,5 +1,6 @@
 const THEME_STORAGE_KEY = 'site-theme';
 const LEGACY_THEME_KEYS = ['public-theme', 'hr-theme'];
+const initializedButtons = new WeakSet();
 
 export function getStoredTheme() {
     try {
@@ -7,7 +8,8 @@ export function getStoredTheme() {
             .map((key) => localStorage.getItem(key))
             .find(Boolean);
 
-        return saved === 'dark' || saved === 'light' ? saved : 'light';
+        if (saved === 'dark' || saved === 'light') return saved;
+        return window.matchMedia?.('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     } catch (error) {
         return 'light';
     }
@@ -42,6 +44,8 @@ export function initTheme() {
     applyTheme(preferredTheme);
 
     document.querySelectorAll('[data-theme-toggle], [data-public-theme]').forEach((button) => {
+        if (initializedButtons.has(button)) return;
+        initializedButtons.add(button);
         button.addEventListener('click', () => {
             const nextTheme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
             applyTheme(nextTheme);

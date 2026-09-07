@@ -15,6 +15,7 @@
     <script>
         try {
             document.documentElement.dataset.theme =
+                localStorage.getItem('site-theme') ||
                 localStorage.getItem('public-theme') ||
                 (
                     matchMedia('(prefers-color-scheme: dark)').matches ?
