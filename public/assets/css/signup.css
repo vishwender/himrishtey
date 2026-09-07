@@ -393,3 +393,32 @@ body.signup-body {
 @media (max-width: 380px) {
   .su-navbar-text { display: none; }
 }
+/* Complete Profile uses the shared public shell and its theme colors. */
+.public-main > .su-main {
+  --space-2: .5rem;
+  --space-3: .75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --text-xs: .75rem;
+  --text-sm: .875rem;
+  --text-lg: 1.125rem;
+  --radius-md: .75rem;
+  --shadow-lg: var(--site-shadow);
+  --transition-base: var(--transition);
+  --color-primary: var(--brand);
+  --color-primary-hover: color-mix(in srgb, var(--brand) 80%, #000);
+  --color-primary-light: color-mix(in srgb, var(--brand) 12%, var(--surface));
+  --color-primary-placeholder: color-mix(in srgb, var(--brand) 18%, transparent);
+  --color-text-medium: var(--text);
+  --color-text-faint: var(--muted);
+  --color-surface-offset: var(--surface-soft);
+  --color-error: #c62848;
+  --color-success: #278454;
+  --color-success-light: color-mix(in srgb, var(--color-success) 12%, var(--surface));
+  padding-inline: 1rem;
+  background: var(--color-bg);
+  color: var(--color-text);
+}

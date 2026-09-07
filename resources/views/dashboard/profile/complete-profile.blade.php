@@ -1,12 +1,12 @@
-@extends('layouts.app')
-@section('title','Complete your profile - Himrishtey')
+@extends('layouts.public')
+@section('title', 'Complete your profile - ' . $siteName)
 
-@section('styles')
+@push('head')
 <link href="{{ asset('assets/css/signup.css') }}" rel="stylesheet" />
-@endsection
+@endpush
 @section('content')
 <!-- ================= MAIN ================= -->
-<main class="su-main">
+<div class="su-main" id="main-content">
     <div class="container-xxl">
         <div class="su-card">
 
@@ -482,7 +482,7 @@
                 <div class="su-success-icon">
                     <i data-lucide="check" width="32" height="32"></i>
                 </div>
-                <h2 class="su-panel-title">Welcome to HimRishtey<span id="successName"></span>!</h2>
+                <h2 class="su-panel-title">Welcome to {{ $siteName }}<span id="successName"></span>!</h2>
                 <p class="su-panel-subtitle">Your profile has been created successfully. Our team will verify your details shortly — you can start exploring matches right away.</p>
                 <a href="{{route('home')}}" class="btn-login su-success-cta">
                     <span class="btn-login-text">Go to Dashboard <i data-lucide="arrow-right" width="16" height="16"></i></span>
@@ -491,9 +491,5 @@
 
         </div>
     </div>
-</main>
-@endsection
-
-@section('scripts')
-<script src="{{ asset('assets/js/signup.js') }}"></script>
+</div>
 @endsection
