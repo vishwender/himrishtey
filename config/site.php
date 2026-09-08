@@ -43,13 +43,9 @@ return [
 
             'instagram' => [
                 'enabled' => true,
-
                 'username' => 'himrishtey',
-
                 'url' => 'https://www.instagram.com/himrishtey/',
-
                 'user_id' => env('HIMRISHTEY_INSTAGRAM_USER_ID'),
-
                 'access_token' => env('HIMRISHTEY_INSTAGRAM_ACCESS_TOKEN'),
             ],
             'android_app_url' => env('SITE1_ANDROID_APP_URL', 'https://play.google.com/store/apps/details?id=com.app.himrishtey&hl=en_IN'),
