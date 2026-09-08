@@ -4,14 +4,14 @@
 @section('description', 'Contact the ' . $siteName . ' support team for help with your profile, membership, account, or matrimonial journey.')
 
 @push('head')
-    <link rel="stylesheet" href="{{ asset('assets/css/contact.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/contact.css') }}">
 @endpush
 
 @section('content')
 @php
-    $contactAddress = $siteKey === 'himrishtey.com'
-        ? "1st Floor, Manali, Mandi - Pathankot Road\nOpp. Palam Hardware Kalu Ki Hatti\nBag Uparla, Palampur\nHimachal Pradesh 176102"
-        : $siteSupportAddress;
+$contactAddress = $siteKey === 'himrishtey.com'
+? "1st Floor, Manali, Mandi - Pathankot Road\nOpp. Palam Hardware Kalu Ki Hatti\nBag Uparla, Palampur\nHimachal Pradesh 176102"
+: $siteSupportAddress;
 @endphp
 <div class="contact-page" id="main-content">
     <section class="contact-hero" aria-labelledby="contact-title">
@@ -53,14 +53,17 @@
         <section class="contact-form-card" aria-labelledby="contact-form-title">
             <div class="contact-form-heading">
                 <span class="contact-form-icon"><i data-lucide="send" width="20" height="20" aria-hidden="true"></i></span>
-                <div><h2 id="contact-form-title">Send us a message</h2><p>Fields marked with * are required.</p></div>
+                <div>
+                    <h2 id="contact-form-title">Send us a message</h2>
+                    <p>Fields marked with * are required.</p>
+                </div>
             </div>
 
             @if (session('contact_success'))
-                <div class="contact-alert contact-alert-success" role="status"><i data-lucide="circle-check" width="20" height="20" aria-hidden="true"></i><span>{{ session('contact_success') }}</span></div>
+            <div class="contact-alert contact-alert-success" role="status"><i data-lucide="circle-check" width="20" height="20" aria-hidden="true"></i><span>{{ session('contact_success') }}</span></div>
             @endif
             @if ($errors->any())
-                <div class="contact-alert contact-alert-error" role="alert"><i data-lucide="circle-alert" width="20" height="20" aria-hidden="true"></i><span>Please check the highlighted fields and try again.</span></div>
+            <div class="contact-alert contact-alert-error" role="alert"><i data-lucide="circle-alert" width="20" height="20" aria-hidden="true"></i><span>Please check the highlighted fields and try again.</span></div>
             @endif
 
             <form method="POST" action="{{ route('contact-us.submit') }}" class="contact-form">
@@ -88,7 +91,7 @@
                     </div>
                     <div class="contact-field">
                         <label for="contact-profile">Profile ID <small>(if registered)</small></label>
-                        <input id="contact-profile" name="profile_id" type="text" value="{{ old('profile_id') }}" maxlength="50" placeholder="e.g. HR12345" @error('profile_id') aria-invalid="true" aria-describedby="profile-error" @enderror>
+                        <input id="contact-profile" name="profile_id" type="text" value="{{ old('profile_id') }}" maxlength="50" placeholder="e.g. HIM12345" @error('profile_id') aria-invalid="true" aria-describedby="profile-error" @enderror>
                         @error('profile_id')<small class="contact-error" id="profile-error">{{ $message }}</small>@enderror
                     </div>
                 </div>
@@ -98,7 +101,7 @@
                     <select id="contact-subject" name="subject" required @error('subject') aria-invalid="true" aria-describedby="subject-error" @enderror>
                         <option value="">Choose a topic</option>
                         @foreach (\App\Models\ContactMessage::SUBJECTS as $subject)
-                            <option value="{{ $subject }}" @selected(old('subject') === $subject)>{{ $subject }}</option>
+                        <option value="{{ $subject }}" @selected(old('subject')===$subject)>{{ $subject }}</option>
                         @endforeach
                     </select>
                     @error('subject')<small class="contact-error" id="subject-error">{{ $message }}</small>@enderror

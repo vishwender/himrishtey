@@ -4,40 +4,34 @@
     <a
         class="logo public-logo"
         href="{{ route('welcome') }}"
-        aria-label="{{ $siteName }} home"
-    >
+        aria-label="{{ $siteName }} home">
         <img
             src="{{ asset($siteLogo) }}"
-            alt="{{ $siteName }}"
-        >
+            alt="{{ $siteName }}">
     </a>
 
 
     {{-- Desktop Navigation --}}
     <nav aria-label="Main navigation">
 
-        <a href="{{ route('welcome') }}#matches">
-            Matches
+        <a href="{{ route('welcome') }}#featured">
+            Discover
         </a>
 
-        <a href="{{ route('welcome') }}#search">
-            Search
-        </a>
-
-        <a href="{{ route('success-stories') }}">
+        <a href="{{ route('welcome') }}#stories">
             Success Stories
         </a>
 
-        <a href="{{ route('pricing') }}">
-            Membership
+        <a href="{{ route('welcome') }}#how">
+            How it Works
         </a>
 
         <a href="{{ route('about-us') }}">
-            About Us
+            Why HimRishtey
         </a>
 
         <a href="{{ route('blog.index') }}">
-            Blog
+            Matrimony Guide
         </a>
 
     </nav>
@@ -52,38 +46,33 @@
             type="button"
             data-public-theme
             aria-label="Switch color theme"
-            title="Switch theme"
-        >
+            title="Switch theme">
             <i
                 class="theme-sun"
                 data-lucide="sun"
-                aria-hidden="true"
-            ></i>
+                aria-hidden="true"></i>
 
             <i
                 class="theme-moon"
                 data-lucide="moon"
-                aria-hidden="true"
-            ></i>
+                aria-hidden="true"></i>
         </button>
 
 
         {{-- Guest Actions --}}
         @guest('member')
 
-            <a
-                class="outline public-outline public-cta public-cta-secondary"
-                href="{{ route('login-form') }}"
-            >
-                Login
-            </a>
+        <a
+            class="outline public-outline public-cta public-cta-secondary"
+            href="{{ route('login-form') }}">
+            Login
+        </a>
 
-            <a
-                class="solid public-solid public-cta public-cta-primary"
-                href="{{ route('login-form') }}#register"
-            >
-                Register Free
-            </a>
+        <a
+            class="solid public-solid public-cta public-cta-primary"
+            href="{{ route('login-form') }}#register">
+            Register Free
+        </a>
 
         @endguest
 
@@ -91,12 +80,11 @@
         {{-- Logged In Member --}}
         @auth('member')
 
-            <a
-                class="solid public-solid public-cta public-cta-primary"
-                href="{{ route('home') }}"
-            >
-                My Account
-            </a>
+        <a
+            class="solid public-solid public-cta public-cta-primary"
+            href="{{ route('home') }}">
+            My Account
+        </a>
 
         @endauth
 
@@ -108,12 +96,10 @@
             data-public-menu
             aria-label="Open navigation"
             aria-expanded="false"
-            aria-controls="public-mobile-navigation"
-        >
+            aria-controls="public-mobile-navigation">
             <i
                 data-lucide="menu"
-                aria-hidden="true"
-            ></i>
+                aria-hidden="true"></i>
         </button>
 
     </div>
@@ -126,8 +112,7 @@
     id="public-mobile-navigation"
     class="public-mobile-nav"
     data-public-mobile
-    aria-label="Mobile navigation"
->
+    aria-label="Mobile navigation">
 
     <a href="{{ route('welcome') }}#matches">
         Matches
@@ -155,19 +140,17 @@
 
     @guest('member')
 
-        <a
-            class="mobile-auth-link"
-            href="{{ route('login-form') }}"
-        >
-            Login
-        </a>
+    <a
+        class="mobile-auth-link"
+        href="{{ route('login-form') }}">
+        Login
+    </a>
 
-        <a
-            class="mobile-auth-link mobile-register-link"
-            href="{{ route('login-form') }}#register"
-        >
-            Register Free
-        </a>
+    <a
+        class="mobile-auth-link mobile-register-link"
+        href="{{ route('login-form') }}#register">
+        Register Free
+    </a>
 
     @endguest
 

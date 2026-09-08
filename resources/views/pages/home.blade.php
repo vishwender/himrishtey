@@ -34,7 +34,7 @@
                  <h1>Find someone<br><em>who feels like home.</em></h1>
                  <p>Meaningful connections. Genuine profiles.<br>A simple way to find your life partner.</p>
                  <div class="hero-buttons">
-                     <a class="solid public-cta public-cta-primary" href="#matches">
+                     <a class="solid public-cta public-cta-primary" href="#featured">
                          <i data-lucide="heart" aria-hidden="true"></i>Find Matches
                      </a>
                      <a class="outline public-cta public-cta-secondary" href="{{ route('login-form') }}#register">
@@ -106,7 +106,7 @@
                      <select id="cityName" name="city_name">
                          <option value="">Any city</option>
                          @foreach($searchCities as $city)
-                             <option value="{{ $city }}">{{ $city }}</option>
+                         <option value="{{ $city }}">{{ $city }}</option>
                          @endforeach
                      </select>
                  </span>
@@ -133,7 +133,7 @@
          </section>
 
          @if($featuredProfiles->isNotEmpty())
-         <section class="matches wrap" id="matches" data-profile-slider aria-label="Verified members" aria-roledescription="carousel">
+         <section class="matches wrap" id="featured" data-profile-slider aria-label="Verified members" aria-roledescription="carousel">
              <h2>Meet our verified members</h2>
              <div class="ornament"><i data-lucide="heart" aria-hidden="true"></i></div>
              <div class="profile-slider-controls" hidden>
@@ -217,16 +217,68 @@
              </div><a class="more outline public-cta public-cta-secondary" href="{{ route('success-stories') }}">Read More Success Stories</a>
          </section>
 
+         @php
+         $instagram = config('site.current.instagram', []);
+
+         $enabled = (bool) ($instagram['enabled'] ?? false);
+         $username = $instagram['username'] ?? null;
+         $instagramUrl = $instagram['url'] ?? '#';
+
+         $instagramItems = collect();
+
+         if ($enabled) {
+         $instagramItems = app(\App\Services\InstagramFeedService::class)
+         ->getLatestMedia(6);
+         }
+         @endphp
+
+         @if($enabled && $instagramItems->isNotEmpty())
+
          <section class="communities wrap">
-             <h2>Explore by community</h2>
+             <h2>Latest from Instagram</h2>
+
              <div class="community-grid">
-                 @foreach(['Himachali Matches','Jammu Matches','Kangra Matches','Kullu Matches','Professionals','Recently Joined'] as $i=>$community)
-                 <a href="{{ route('login-form') }}#register" style="--bg:url('{{ asset(['assets/images/hero-devbhoomi.jpg','assets/images/hero-dogri.jpg','assets/images/hero-himrishtey.jpg','assets/images/hero-gallpakki.jpg','uploads/gallery/photo_1787814410_6a8fe20a0ead2.jpeg','uploads/gallery/photo_1787743596_6a8ecd6ccb322.jpg'][$i]) }}')">
-                     <b>{{ $community }}</b>
+
+                 @foreach($instagramItems as $item)
+
+                 @php
+                 $mediaType = $item['media_type'] ?? '';
+                 $productType = $item['media_product_type'] ?? '';
+
+                 $isReel =
+                 $mediaType === 'VIDEO'
+                 && $productType === 'REELS';
+
+                 $image =
+                 $item['thumbnail_url']
+                 ?? $item['media_url']
+                 ?? null;
+
+                 $permalink =
+                 $item['permalink']
+                 ?? $instagramUrl;
+
+                 $caption =
+                 $item['caption']
+                 ?? 'View on Instagram';
+                 @endphp
+
+                 @if($image)
+
+                 <a
+                     href="{{ $permalink }}"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     class="instagram-community-card"
+                     style="--bg:url('{{ $image }}')">
+
                  </a>
+                 @endif
                  @endforeach
              </div>
          </section>
+         @endif
+
 
          <section class="app-cta">
              <div class="phone"><i data-lucide="smartphone" aria-hidden="true"></i><small>{{ $siteName }}</small></div>
@@ -257,7 +309,6 @@
              </a>
          </section>
      </main>
-
      @include('partials.public-footer')
  </body>
 

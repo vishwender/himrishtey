@@ -4,6 +4,7 @@ return [
     'default' => env('SITE_DEFAULT_CONNECTION', 'mysql'),
 
     'sites' => [
+
         'himrishtey.com' => [
             'search_state' => 'Himachal Pradesh',
             'hosts' => ['himrishtey.ddev.site'],
@@ -38,6 +39,18 @@ return [
                 'x' => env('SITE1_SOCIAL_X', 'https://x.com/himrishte'),
                 'instagram' => env('SITE1_SOCIAL_INSTAGRAM', 'https://www.instagram.com/himrishtey/'),
                 'youtube' => env('SITE1_SOCIAL_YOUTUBE', 'https://www.youtube.com/channel/UCwIe3GhJL-_c0bQ80eFv6RQ'),
+            ],
+
+            'instagram' => [
+                'enabled' => true,
+
+                'username' => 'himrishtey',
+
+                'url' => 'https://www.instagram.com/himrishtey/',
+
+                'user_id' => env('HIMRISHTEY_INSTAGRAM_USER_ID'),
+
+                'access_token' => env('HIMRISHTEY_INSTAGRAM_ACCESS_TOKEN'),
             ],
             'android_app_url' => env('SITE1_ANDROID_APP_URL', 'https://play.google.com/store/apps/details?id=com.app.himrishtey&hl=en_IN'),
             'ios_app_url' => env('SITE1_IOS_APP_URL', 'https://apps.apple.com/in/search?term=HimRishtey'),
